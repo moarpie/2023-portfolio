@@ -49,7 +49,7 @@ function styleDictionaryBuilder(inputTokens) {
 
 async function generateVars() {
 	const rawTokens = await getFigmaTokens();
-	const transformedTokens = await resolveTokens(rawTokens);
+	const transformedTokens = resolveTokens(rawTokens);
 	console.log(transformedTokens);
 	styleDictionaryBuilder(transformedTokens);
 	

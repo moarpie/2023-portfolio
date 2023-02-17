@@ -2,12 +2,12 @@
   "name": "2023-portfolio",
   "private": true,
   "version": "0.0.0",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "build-tokens": "node build-tokens.js"
+    "build-tokens": "node build-tokens.cjs"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.2",
