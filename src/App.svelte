@@ -1,8 +1,9 @@
 <script>
   import Button from './lib/Button.svelte'
 </script>
-<div class="container">
+<div class="container mx-auto">
   <Button class="full-width" link="#" label="full width"/>
+  <Button class="" link="#" label="awdawd"/>
 </div>
 <Button class="" link="#" label="awdawd"/>
 <br>
