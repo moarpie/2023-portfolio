@@ -1,12 +1,14 @@
 <script>
   import Button from './lib/Button.svelte'
 </script>
-
-<Button class="big" link="#" label="awdawd"/>
+<div class="container">
+  <Button class="full-width" link="#" label="full width"/>
+</div>
+<Button class="" link="#" label="awdawd"/>
 <br>
-<Button class="big" link="#" label="awwadawddawdawd"/>
-<Button class="big" link="#" label="awwadawddawdawd"/>
-<Button class="big" link="#" label="awwadawddawdawd"/>
+<Button class="" link="https://apple.com" label="apple.com"/>
+<Button class="" link="#" label="awwadawddawdawd"/>
+<Button class="" link="#" label="awwadawddawdawd"/>
 
 
 <style>

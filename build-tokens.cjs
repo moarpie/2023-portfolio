@@ -10,7 +10,7 @@ function getFigmaTokens() {
 
 function resolveTokens(rawTokens) {
 	//inputs for token-transformer
-	const setsToUse = ['global','button'];
+	const setsToUse = ['global','button','typo'];
 	const excludes = ['global'];
 	//settings for token-transformer
 	const transformerOptions = {
@@ -50,7 +50,6 @@ function styleDictionaryBuilder(inputTokens) {
 async function generateVars() {
 	const rawTokens = await getFigmaTokens();
 	const transformedTokens = resolveTokens(rawTokens);
-	console.log(transformedTokens);
 	styleDictionaryBuilder(transformedTokens);
 	
 }
