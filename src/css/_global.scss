@@ -1,4 +1,6 @@
-@import '_variables.scss';
+@import '_variables';
+@import 'light-variables';
+@import 'dark-variables';
 
 /*MacOS font rendering hack*/
 body {
@@ -44,8 +46,8 @@ body {
 [data-theme='light'] {
     @import 'light-variables';
     body {
-        background-color: $background-color;
-        color: $text-color;
+        background-color: $canvas-color;
+        color: $default-color;
       }
 
 }
@@ -57,8 +59,8 @@ body {
   @import 'dark-variables';
 
   body {
-    background-color: $background-color;
-    color: $text-color;
+    background-color: $canvas-color;
+    color: $default-color;
   }
 
 }
