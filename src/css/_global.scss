@@ -1,2 +1,64 @@
 @import '_variables.scss';
 
+/*MacOS font rendering hack*/
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    // color: $default-color;
+}
+
+h1,h2,h3 {
+    font-family: $title-font-family;
+    font-weight: $title-font-weight;
+    // color: $default-color;
+}
+h1 {
+    font-size: $typo-title-large-font-size;
+    line-height: $typo-title-large-line-height;
+}
+h2 {
+    font-size: $typo-title-medium-font-size;
+    line-height: $typo-title-medium-line-height;
+}
+h3 {
+    font-size: $typo-title-small-font-size;
+    line-height: $typo-title-small-line-height;
+}
+p {
+    font-family: $body-font-family;
+    font-weight: $body-font-weight;
+    font-size: $typo-body-medium-bold-font-size;
+    line-height: $typo-body-medium-bold-line-height;
+    // color: $default-color;
+}
+
+.emphasis {
+    color: $emphasis-color;
+}
+
+
+body {
+    transition: background-color 300ms, color 300ms;
+}
+[data-theme='light'] {
+    @import 'light-variables';
+    body {
+        background-color: $background-color;
+        color: $text-color;
+      }
+
+}
+// Define your styles using the variables
+
+
+// Conditionally apply styles based on the current theme
+[data-theme='dark'] {
+  @import 'dark-variables';
+
+  body {
+    background-color: $background-color;
+    color: $text-color;
+  }
+
+}

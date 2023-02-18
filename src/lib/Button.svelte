@@ -1,17 +1,26 @@
 <script>
+    import { createEventDispatcher } from 'svelte';
+
+    const dispatch = createEventDispatcher();
+    function handleClick() {
+        dispatch('click');
+    }
     export let label;
     export let link;
 </script>
 
-<a class="button {$$props.class}" href="{link}">{label}</a>
+<a class="button {$$props.class}" on:click={handleClick} href="{link}">{label}</a>
 
 <style lang="scss">
-   @import "../css/_global.scss";
+   @import "../css/_variables.scss";
     /*strips all standard link styling*/
     a {
         all: unset;
-        display: inline-block;
+        display: inline-flex;
         box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        
         cursor: pointer;
 
     }

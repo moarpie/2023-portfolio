@@ -8,10 +8,22 @@ function getFigmaTokens() {
         .then(fileContent => JSON.parse(fileContent));
 }
 
-function resolveTokens(rawTokens) {
+function resolveTokens(inputTokens, themeModeHandler) {
+    let setsToUse = '';
+    let excludes = '';
+    if (themeModeHandler === '') {
+        setsToUse = ['global','button'];
+	    excludes = ['global'];
+
+    } else {
+        setsToUse = ['global',themeModeHandler];
+	    excludes = ['global'];
+        
+    }
 	//inputs for token-transformer
-	const setsToUse = ['global','button','typo'];
-	const excludes = ['global'];
+	//const setsToUse = ['global',themeModeHandler,'button'];
+	//const excludes = ['global'];
+    
 	//settings for token-transformer
 	const transformerOptions = {
 		expandTypography: true,
@@ -22,12 +34,23 @@ function resolveTokens(rawTokens) {
 		resolveReferences:true
 	}
 
-	return resolvedTokens = transformTokens(rawTokens,setsToUse, excludes,transformerOptions);
+	return resolvedTokens = transformTokens(inputTokens,setsToUse, excludes,transformerOptions);
 
 }
 
 
-function styleDictionaryBuilder(inputTokens) {
+function styleDictionaryBuilder(inputTokens, themePath) {
+
+    //removes the dash between thememode and "variables" in filename if themePath is empty
+    let dash = '';
+    if (themePath === '') {
+        dash = '';
+
+
+    } else {
+        dash = '-';
+    }
+
     styleDictionary.extend({
         'tokens': inputTokens,
         'platforms': {
@@ -35,7 +58,7 @@ function styleDictionaryBuilder(inputTokens) {
                 'transformGroup': 'scss',
                 'files': [
                     {
-                        'destination': `src/css/_variables.scss`,
+                        'destination': `src/css/_${themePath}${dash}variables.scss`,
                         'format': 'scss/variables',
                         'options': {
                             'outputReferences': true
@@ -47,10 +70,12 @@ function styleDictionaryBuilder(inputTokens) {
     }).buildAllPlatforms();
 }
 
-async function generateVars() {
+async function generateVars(themeMode) {
 	const rawTokens = await getFigmaTokens();
-	const transformedTokens = resolveTokens(rawTokens);
-	styleDictionaryBuilder(transformedTokens);
+	const transformedTokens = resolveTokens(rawTokens, themeMode);
+	styleDictionaryBuilder(transformedTokens, themeMode);
 	
 }
-generateVars();
+generateVars('dark');
+generateVars('light');
+generateVars('');
