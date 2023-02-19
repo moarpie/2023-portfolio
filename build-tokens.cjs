@@ -9,10 +9,13 @@ function getFigmaTokens() {
 }
 
 function resolveTokens(inputTokens, themeModeHandler) {
+
+    //Output only relevant theme-mode tokens for light and dark, 
+    //and everything else if theme isn't set.
     let setsToUse = '';
     let excludes = '';
     if (themeModeHandler === '') {
-        setsToUse = ['global','button'];
+        setsToUse = ['global','button','typo'];
 	    excludes = ['global'];
 
     } else {
