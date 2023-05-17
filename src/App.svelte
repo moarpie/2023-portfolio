@@ -40,18 +40,17 @@
 
 	
 </script>
-
+<Header/>
 <div class="container mx-auto">
 
 	<h1 class="mb-2">This is a large title</h1>
 	<h2 class="mb-2">This is a medium title</h2>
 	<h3 class="mb-2">This is a small title</h3>
 	<p class="mb-2">This is some body text</p>
+	<p class="mb-2 emphasis">This is EMPHASISED!</p>
 	<Button on:click={toggleTheme} class="full-width mb-2" link="#" label="toggle mode"/>
 
 </div>
-
-
 
 <style lang="scss">
 

@@ -61,7 +61,7 @@ function styleDictionaryBuilder(inputTokens, themePath) {
                 'transformGroup': 'scss',
                 'files': [
                     {
-                        'destination': `src/css/_${themePath}${dash}variables.scss`,
+                        'destination': `src/css/vars/_${themePath}${dash}variables.scss`,
                         'format': 'scss/variables',
                         'options': {
                             'outputReferences': true

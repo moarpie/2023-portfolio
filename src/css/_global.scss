@@ -1,66 +1,13 @@
-@import '_variables';
-@import 'light-variables';
-@import 'dark-variables';
+//get Tailwind stuff
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/*MacOS font rendering hack*/
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-
-}
-
-h1,h2,h3 {
-    font-family: $title-font-family;
-    font-weight: $title-font-weight;
-
-}
-h1 {
-    font-size: $typo-title-large-font-size;
-    line-height: $typo-title-large-line-height;
-}
-h2 {
-    font-size: $typo-title-medium-font-size;
-    line-height: $typo-title-medium-line-height;
-}
-h3 {
-    font-size: $typo-title-small-font-size;
-    line-height: $typo-title-small-line-height;
-}
-p {
-    font-family: $body-font-family;
-    font-weight: $body-font-weight;
-    font-size: $typo-body-medium-bold-font-size;
-    line-height: $typo-body-medium-bold-line-height;
-
-}
-
-.emphasis {
-    color: $emphasis-color;
-}
-
-
-body {
-    transition: background-color 300ms, color 300ms;
-}
+// Conditionally change value of color variables based on active theme
 [data-theme='light'] {
-    @import 'light-variables';
-    body {
-        background-color: $canvas-color;
-        color: $default-color;
-      }
-
+    @import 'modes/mode-light';
 }
-// Define your styles using the variables
 
-
-// Conditionally apply styles based on the current theme
 [data-theme='dark'] {
-  @import 'dark-variables';
-
-  body {
-    background-color: $canvas-color;
-    color: $default-color;
-  }
-
+    @import 'modes/mode-dark';
 }

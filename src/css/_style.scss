@@ -1,0 +1,85 @@
+@import 'vars/variables';
+
+
+/*FONT STYLINGS*/
+
+/*MacOS font rendering hack*/
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.jumbotron {
+    font-family: $typo-jumbotron-font-family;
+    font-weight: $typo-jumbotron-font-weight;
+    font-size: calc(#{$typo-jumbotron-font-size} * 0.4);
+    line-height: $typo-jumbotron-line-height;
+}
+
+.display {
+    font-family: $typo-display-font-family;
+    font-weight: $typo-display-font-weight;
+    font-size: calc(#{$typo-display-font-size} * 0.4);
+    line-height: $typo-display-line-height;
+
+}
+.title-large, .title-medium, .title-small {
+    font-family: $title-font-family;
+    font-weight: $title-font-weight;
+}
+.title-large {
+    font-size: $typo-title-large-font-size;
+    line-height: $typo-title-large-line-height;
+}
+.title-medium {
+    font-size: $typo-title-medium-font-size;
+    line-height: $typo-title-medium-line-height;
+}
+.title-small {
+    font-size: $typo-title-small-font-size;
+    line-height: $typo-title-small-line-height;
+}
+.subtitle-large, .subtitle-small {
+    font-family: $title-font-family;
+    font-weight: $title-font-weight;
+}
+.subtitle-large {
+    font-size: $typo-subtitle-large-font-size;
+    line-height: $typo-subtitle-large-line-height;
+}
+
+.subtitle-small {
+    font-size: $typo-subtitle-small-font-size;
+    line-height: $typo-subtitle-small-line-height;
+}
+p {
+    font-family: $body-font-family;
+    font-weight: $body-font-weight;
+    font-size: $typo-body-medium-bold-font-size;
+    line-height: $typo-body-medium-bold-line-height;
+
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        font-size: $typo-jumbotron-font-size;
+    }
+    .display {
+        font-size: $typo-display-font-size;
+    }
+    
+}
+
+body {
+    transition: background-color 200ms, color 200ms;
+}
+
+body {
+	background-color: $canvas-color;
+	color: $default-color;
+}
+
+.interactive {
+    color: $interactive-color;
+}

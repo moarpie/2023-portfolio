@@ -12,7 +12,7 @@
 <a class="button {$$props.class}" on:click={handleClick} href="{link}">{label}</a>
 
 <style lang="scss">
-   @import "../css/_variables.scss";
+   @import "../css/vars/_variables.scss";
     /*strips all standard link styling*/
     a {
         all: unset;
@@ -20,13 +20,13 @@
         box-sizing: border-box;
         align-items: center;
         justify-content: center;
-        
         cursor: pointer;
 
     }
 
     .button {
         text-align: center;
+        transition: background-color 300ms;
         background: $button-background-color;
         color: $button-label-color;
         height: $button-height;
