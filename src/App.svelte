@@ -1,6 +1,7 @@
 <script>
 	import Button from './lib/Button.svelte'
 	import Header from './lib/Header.svelte'
+    import ModeToggleButton from './lib/ModeToggleButton.svelte';
 
 	// Function to detect system preference for light or dark mode
 	function detectColorScheme() {
@@ -23,23 +24,11 @@
 	// Set the initial theme
 	document.documentElement.setAttribute("data-theme", savedTheme);
 
-	// Function to toggle the theme
-	function toggleTheme() {
-		let currentTheme = document.documentElement.getAttribute("data-theme");
-		let newTheme = "";
 
-		if (currentTheme === "light") {
-			newTheme = "dark";
-		} else {
-			newTheme = "light";
-		}
-
-		document.documentElement.setAttribute("data-theme", newTheme);
-		localStorage.setItem("theme", newTheme);
-	}
 
 	
 </script>
+<ModeToggleButton />
 <Header/>
 <div class="container mx-auto">
 
@@ -48,10 +37,11 @@
 	<h3 class="mb-2">This is a small title</h3>
 	<p class="mb-2">This is some body text</p>
 	<p class="mb-2 emphasis">This is EMPHASISED!</p>
-	<Button on:click={toggleTheme} class="full-width mb-2" link="#" label="toggle mode"/>
+	<Button class="full-width mb-2" link="#" label="toggle mode"/>
 
 </div>
 
-<style lang="scss">
+<style global lang="scss">
+	@import "css/_global.scss";
 
 </style>

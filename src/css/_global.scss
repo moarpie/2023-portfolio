@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 // Conditionally change value of color variables based on active theme
 [data-theme='light'] {
     @import 'modes/mode-light';

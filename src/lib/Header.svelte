@@ -17,26 +17,26 @@
 
 
 <style lang="scss">
-    @import "../css/vars/_light-variables.scss";
-    
-    .header {
 
-    }
-    .jumbotron {
-    background-color: $interactive-color;
-    background-image: $primary-gradient;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-    }
-    .title {
+// @import "../css/_global.scss";
+//     .header {
 
-    }
-    .subtitle {
+//     }
+//     .jumbotron {
+//     background-color: $interactive-color;
+//     background-image: $primary-gradient;
+//     background-size: 100%;
+//     -webkit-background-clip: text;
+//     -moz-background-clip: text;
+//     -webkit-text-fill-color: transparent; 
+//     -moz-text-fill-color: transparent;
+//     }
+//     .title {
 
-    }
+//     }
+//     .subtitle {
+
+//     }
 
 
 </style>
