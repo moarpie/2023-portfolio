@@ -30,25 +30,16 @@
 		document.head.appendChild(linkTag);
 	});
 </script>
+<div class="circle"></div>
 <button class="toggle-button" on:click={toggleTheme}>
 	Toggle Theme
   </button>
 
 <Header/>
-<div class="container mx-auto">
-
-	<h1 class="mb-2">This is a large title</h1>
-	<h2 class="mb-2">This is a medium title</h2>
-	<h3 class="mb-2">This is a small title</h3>
-	<p class="mb-2">This is some body text</p>
-	<p class="mb-2 emphasis">This is EMPHASISED!</p>
-	<Button class="full-width mb-2" link="#" label="toggle mode"/>
-
-</div>
 
 <style global>
 
-@import "css/vars/_variables.css";
+@import "../public/css/_variables.css";
 /*MacOS font rendering hack*/
 body {
 	-webkit-font-smoothing: antialiased;
@@ -57,10 +48,73 @@ body {
 	background-color: var(--canvas-color);
 	color: var(--default-color);
 }
+
 .jumbotron {
-	font-family: var(--typo-jumbotron-font-family);
-	font-weight: var(--typo-jumbotron-font-weight);
-	font-size: var(--typo-jumbotron-font-size);
+  font-family: var(--typo-jumbotron-font-family);
+  font-weight: var(--typo-jumbotron-font-weight);
+  /* font-size: calc(var(--typo-jumbotron-font-size) * 0.9); */
+  font-size: clamp(1rem, 1.5rem + 15vw, var(--typo-jumbotron-font-size));
+  line-height: var(--typo-jumbotron-line-height);
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    /* font-size: calc(var(--typo-jumbotron-font-size)*0.4); */
+  }
+  
+
+}
+
+.display {
+  font-family: var(--typo-display-font-family);
+  font-weight: var(--typo-display-font-weight);
+  font-size: clamp(1rem, 1.2rem + 2.5vw, var(--typo-display-font-size));
+  /* font-size: var(--typo-display-font-size); */
+  line-height: var(--typo-display-line-height);
+}
+
+.title-large,
+.title-medium,
+.title-small {
+  font-family: var(--title-font-family);
+  font-weight: var(--title-font-weight);
+}
+
+.title-large {
+  font-size: var(--typo-title-large-font-size);
+  line-height: var(--typo-title-large-line-height);
+}
+
+.title-medium {
+  font-size: var(--typo-title-medium-font-size);
+  line-height: var(--typo-title-medium-line-height);
+}
+
+.title-small {
+  font-size: var(--typo-title-small-font-size);
+  line-height: var(--typo-title-small-line-height);
+}
+
+.subtitle-large,
+.subtitle-small {
+  font-family: var(--title-font-family);
+  font-weight: var(--title-font-weight);
+}
+
+.subtitle-large {
+  font-size: var(--typo-subtitle-large-font-size);
+  line-height: var(--typo-subtitle-large-line-height);
+}
+
+.subtitle-small {
+  font-size: var(--typo-subtitle-small-font-size);
+  line-height: var(--typo-subtitle-small-line-height);
+}
+
+p {
+  font-family: var(--body-font-family);
+  font-weight: var(--body-font-weight);
+  font-size: var(--typo-body-medium-bold-font-size);
+  line-height: var(--typo-body-medium-bold-line-height);
 }
 
 </style>
