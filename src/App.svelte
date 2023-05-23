@@ -30,24 +30,47 @@
 		document.head.appendChild(linkTag);
 	});
 </script>
-<div class="circle"></div>
+<div class="gradient-container"></div>
 <button class="toggle-button" on:click={toggleTheme}>
 	Toggle Theme
   </button>
 
 <Header/>
 
+
 <style global>
 
 @import "../public/css/_variables.css";
-/*MacOS font rendering hack*/
+.gradient-container {
+	position: absolute;
+	z-index: -1;
+	height: 100vh;
+	width: 100vw;
+	background: radial-gradient(
+		circle clamp(20vw, 40vw, 50vw) /*circle size*/
+		at clamp(30vw, 40vw, 50vw) /*x position*/
+		clamp(-10vw, -20vw, -30vw), /*y position*/
+		var(--top-gradient1-color) 0%,
+		var(--top-gradient-end-color) 100%
+		),
+		radial-gradient(
+		circle clamp(20vw, 40vw, 50vw) /*circle size*/
+		at clamp(70vw, 60vw, 50vw) /*x position*/
+		clamp(-10vw, -20vw, -30vw), /*y position*/
+		var(--top-gradient2-color) 0%,
+		var(--top-gradient-end-color) 100%
+		) no-repeat;
+}
 body {
+	/*MacOS font rendering hack*/
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
-	background-color: var(--canvas-color);
 	color: var(--default-color);
+	background-color: var(--canvas-color);
+	transition: background-color 200ms, color 200ms;
 }
+
 
 .jumbotron {
   font-family: var(--typo-jumbotron-font-family);
@@ -56,13 +79,7 @@ body {
   font-size: clamp(1rem, 1.5rem + 15vw, var(--typo-jumbotron-font-size));
   line-height: var(--typo-jumbotron-line-height);
 }
-@media (min-width: 768px) {
-  .jumbotron {
-    /* font-size: calc(var(--typo-jumbotron-font-size)*0.4); */
-  }
-  
 
-}
 
 .display {
   font-family: var(--typo-display-font-family);

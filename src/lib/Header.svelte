@@ -19,7 +19,7 @@
 </div>
 
 
-<style lang="scss">
+<style>
     .header {
         max-width: 700px;
         margin: 0 auto;
@@ -33,25 +33,7 @@
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
 }
-// @import "../css/_global.scss";
-//     .header {
 
-//     }
-//     .jumbotron {
-//     background-color: $interactive-color;
-//     background-image: $primary-gradient;
-//     background-size: 100%;
-//     -webkit-background-clip: text;
-//     -moz-background-clip: text;
-//     -webkit-text-fill-color: transparent; 
-//     -moz-text-fill-color: transparent;
-//     }
-//     .title {
-
-//     }
-//     .subtitle {
-
-//     }
 
 
 </style>
