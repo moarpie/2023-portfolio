@@ -1,34 +1,39 @@
 <script>
 	import Button from './lib/Button.svelte'
 	import Header from './lib/Header.svelte'
-    import ModeToggleButton from './lib/ModeToggleButton.svelte';
 
-	// Function to detect system preference for light or dark mode
-	function detectColorScheme() {
-		let theme = "light"; // default to light
+	import { onMount } from 'svelte';
 
-		// Check if system preference is set to dark mode
-		if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-			theme = "dark";
-		}
+	let isDarkMode = false; // Initial theme state
+	let linkTag; // Reference to the <link> tag
 
-		return theme;
+	// Function to toggle the theme
+	function toggleTheme() {
+		isDarkMode = !isDarkMode;
+		document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+
+		// Update the href attribute of the <link> tag
+		const cssFilePath = isDarkMode ? 'css/_dark-variables.css' : 'css/_light-variables.css';
+		linkTag.href = cssFilePath;
 	}
 
-	// Get the saved theme from local storage, or default to system preference
-	let savedTheme = localStorage.getItem("theme");
-	if (!savedTheme) {
-		savedTheme = detectColorScheme();
-	}
+	// Load the initial theme CSS on component mount
+	onMount(() => {
+		const cssFilePath = isDarkMode ? 'css/_dark-variables.css' : 'css/_light-variables.css';
 
-	// Set the initial theme
-	document.documentElement.setAttribute("data-theme", savedTheme);
+		// Create the <link> tag
+		linkTag = document.createElement('link');
+		linkTag.rel = 'stylesheet';
+		linkTag.href = cssFilePath;
 
-
-
-	
+		// Append the <link> tag to the document head
+		document.head.appendChild(linkTag);
+	});
 </script>
-<ModeToggleButton />
+<button class="toggle-button" on:click={toggleTheme}>
+	Toggle Theme
+  </button>
+
 <Header/>
 <div class="container mx-auto">
 
@@ -41,7 +46,21 @@
 
 </div>
 
-<style global lang="scss">
-	@import "css/_global.scss";
+<style global>
+
+@import "css/vars/_variables.css";
+/*MacOS font rendering hack*/
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	background-color: var(--canvas-color);
+	color: var(--default-color);
+}
+.jumbotron {
+	font-family: var(--typo-jumbotron-font-family);
+	font-weight: var(--typo-jumbotron-font-weight);
+	font-size: var(--typo-jumbotron-font-size);
+}
 
 </style>

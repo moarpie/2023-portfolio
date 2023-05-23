@@ -57,12 +57,12 @@ function styleDictionaryBuilder(inputTokens, themePath) {
     styleDictionary.extend({
         'tokens': inputTokens,
         'platforms': {
-            'scss': {
-                'transformGroup': 'scss',
+            'css': {
+                'transformGroup': 'css',
                 'files': [
                     {
-                        'destination': `src/css/vars/_${themePath}${dash}variables.scss`,
-                        'format': 'scss/variables',
+                        'destination': `public/css/_${themePath}${dash}variables.css`,
+                        'format': 'css/variables',
                         'options': {
                             'outputReferences': true
                         }
