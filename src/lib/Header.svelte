@@ -1,16 +1,15 @@
 <script>
     // import Button from "./Button.svelte";
 </script>
-
-<div class="header container">
-    <div class="text-center mt-16">
+<div class="header container px-4">
+    <div class="text-center mt-4 md:mt-16">
         <div class="jumbotron">Hello.</div>
         
     </div>
-    <div class="text-center title mb-4">
+    <div class="text-center title mb-2 md:mb-4 mx-4">
         <h1 class="display">I am a product designer from Aalborg, Denmark</h1>
     </div>
-    <div class="text-center title mb-8">
+    <div class="text-center title mb-8 mx-4">
         <h1 class="subtitle-large">I convert caffeine and user insights to pixels</h1>
     </div>
     <div class="text-center">

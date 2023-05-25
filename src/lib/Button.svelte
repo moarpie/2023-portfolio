@@ -25,7 +25,7 @@
     }
     .button {
         text-align: center;
-        transition: background-color 300ms;
+        transition: background-color 250ms;
         background: var(--button-background-color);
         color: var(--button-label-color);
         height: var(--button-height);

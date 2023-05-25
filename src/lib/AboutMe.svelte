@@ -4,8 +4,9 @@
     import Button from "$lib/Button.svelte";
     import AgeCalc from "$lib/AgeCalc.svelte";
 </script>
+<div class="container px-4">
     <div class="about-me flex flex-col justify-center items-center md:flex-row ">
-        <div class="-mb-8 md:mb-0 md:pl-16 profile-blob md:-mr-16">
+        <div class="-mb-8 md:mb-0 profile-blob md:-mr-16">
             <img src={ProfileBlob} alt="">
         </div>
         <div class="card-wrapper">
@@ -21,11 +22,13 @@
             </Card>
         </div>
     </div>
+</div>
+
 <style>
  .card-wrapper {
     max-width: 448px;
  }
  .profile-blob {
-    max-width: 75vw;
+    max-width: 60vw;
  }
 </style>

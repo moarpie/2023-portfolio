@@ -49,8 +49,9 @@ updateTheme();
 </button>
 
 
-
 <slot />
+
+
 <style lang="scss">
 @tailwind base;
 @tailwind components;
@@ -70,15 +71,16 @@ updateTheme();
             clamp(-10vw, -20vw, -30vw), /*y position*/
             var(--top-gradient1-color) 0%,
             var(--top-gradient-end-color) 100%
-            ),
+        ),
             radial-gradient(
             circle clamp(20vw, 40vw, 50vw) /*circle size*/
             at clamp(70vw, 60vw, 50vw) /*x position*/
             clamp(-10vw, -20vw, -30vw), /*y position*/
             var(--top-gradient2-color) 0%,
             var(--top-gradient-end-color) 100%
-            ) no-repeat;
+        ) no-repeat;
     }
+
     body {
     /*MacOS font rendering hack*/
     -webkit-font-smoothing: antialiased;
@@ -101,7 +103,7 @@ updateTheme();
     font-family: var(--typo-jumbotron-font-family);
     font-weight: var(--typo-jumbotron-font-weight);
     /* font-size: calc(var(--typo-jumbotron-font-size) * 0.9); */
-    font-size: clamp(1rem, 1.5rem + 15vw, var(--typo-jumbotron-font-size));
+    font-size: clamp(2rem, 3rem + 15vw, var(--typo-jumbotron-font-size));
     line-height: var(--typo-jumbotron-line-height);
     }
 
@@ -138,8 +140,8 @@ updateTheme();
 
     .subtitle-large,
     .subtitle-small {
-    font-family: var(--title-font-family);
-    font-weight: var(--title-font-weight);
+    font-family: var(--subtitle-font-family);
+    font-weight: var(--subtitle-font-weight);
     }
 
     .subtitle-large {
