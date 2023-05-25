@@ -1,9 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Tue, 23 May 2023 21:49:38 GMT
+ * Generated on Thu, 25 May 2023 06:10:55 GMT
  */
 
 :root {
+  --card-background-color: #fff;
   --top-gradient-end-color: #ffffff00;
   --top-gradient2-color: #69DEC199;
   --top-gradient1-color: #C2A8F899;
