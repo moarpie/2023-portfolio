@@ -15,8 +15,8 @@ function resolveTokens(inputTokens, themeModeHandler) {
     let setsToUse = '';
     let excludes = '';
     if (themeModeHandler === '') {
-        setsToUse = ['global','foundation','typo'];
-	    excludes = ['global'];
+        setsToUse = ['global','semantic','typo','light','dark'];
+	    excludes = ['global','light','dark'];
 
     } else {
         setsToUse = ['global',themeModeHandler];

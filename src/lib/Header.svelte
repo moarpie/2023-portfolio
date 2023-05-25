@@ -2,7 +2,7 @@
     // import Button from "./Button.svelte";
 </script>
 
-<div class="header">
+<div class="header container">
     <div class="text-center mt-16">
         <div class="jumbotron">Hello.</div>
         

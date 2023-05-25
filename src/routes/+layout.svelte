@@ -45,8 +45,8 @@ updateTheme();
 </script>
 <div class="gradient-container"></div>
 <button class="toggle-button" on:click={toggleTheme}>
-	Toggle Theme
-  </button>
+    Toggle Theme
+</button>
 
 
 
@@ -88,6 +88,14 @@ updateTheme();
     background-color: var(--canvas-color);
     transition: background-color 200ms, color 200ms;
     }
+    .section {
+        margin-top: 2rem;
+    }
+    @media (min-width: 1024px) {
+        .section {
+            margin-top: 4rem;
+        }
+     }
 
     .jumbotron {
     font-family: var(--typo-jumbotron-font-family);
@@ -149,6 +157,7 @@ updateTheme();
     font-weight: var(--body-font-weight);
     font-size: var(--typo-body-medium-bold-font-size);
     line-height: var(--typo-body-medium-bold-line-height);
+    margin-bottom: 0.75rem;
     }
 }
 

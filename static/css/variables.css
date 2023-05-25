@@ -1,9 +1,35 @@
 /**
  * Do not edit directly
- * Generated on Thu, 25 May 2023 06:10:55 GMT
+ * Generated on Thu, 25 May 2023 12:56:22 GMT
  */
 
 :root {
+  --elevation-4-type: dropShadow;
+  --elevation-4-color: #00000033;
+  --elevation-4-spread: 0;
+  --elevation-4-blur: 28px;
+  --elevation-4-y: 14px;
+  --elevation-4-x: 0;
+  --elevation-3-type: dropShadow;
+  --elevation-3-color: #00000033;
+  --elevation-3-spread: 0;
+  --elevation-3-blur: 16px;
+  --elevation-3-y: 8px;
+  --elevation-3-x: 0;
+  --elevation-2-type: dropShadow;
+  --elevation-2-color: #00000033;
+  --elevation-2-spread: 0;
+  --elevation-2-blur: 8px;
+  --elevation-2-y: 4px;
+  --elevation-2-x: 0;
+  --elevation-1-type: dropShadow;
+  --elevation-1-color: #00000033;
+  --elevation-1-spread: 0;
+  --elevation-1-blur: 4px;
+  --elevation-1-y: 2px;
+  --elevation-1-x: 0;
+  --card-padding: 1rem;
+  --card-border-radius: 8px;
   --button-padding-x: 16px;
   --button-height: 40px;
   --button-border-radius: 4px;
