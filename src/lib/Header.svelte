@@ -9,7 +9,7 @@
     <div class="text-center title mb-2 md:mb-4 mx-4">
         <h1 class="display">I am a product designer from Aalborg, Denmark</h1>
     </div>
-    <div class="text-center title mb-8 mx-4">
+    <div class="tagline text-center title mb-8 mx-4">
         <h1 class="subtitle-large">I convert caffeine and user insights to pixels</h1>
     </div>
     <div class="text-center">
@@ -22,6 +22,9 @@
     .header {
         max-width: 750px;
         margin: 0 auto;
+    }
+    .tagline {
+        color: var(--vague-color);
     }
 .jumbotron {
     background-color: var(--interactive-color);

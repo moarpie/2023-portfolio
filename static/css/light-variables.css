@@ -1,14 +1,15 @@
 /**
  * Do not edit directly
- * Generated on Wed, 14 Jun 2023 12:52:18 GMT
+ * Generated on Wed, 14 Jun 2023 13:14:56 GMT
  */
 
 :root {
+  --vague-color: #6F6C70;
   --elevation-shadow-color: #00000033;
   --card-background-color: #fff;
   --top-gradient-end-color: #ffffff00;
-  --top-gradient2-color: #69DEC199;
-  --top-gradient1-color: #C2A8F899;
+  --top-gradient2-color: #69DEC1cc;
+  --top-gradient1-color: #C2A8F8cc;
   --primary-gradient: linear-gradient(-45deg, #7B5AC4 0%, #4BB299 100%);
   --canvas-color: #F8F5FA;
   --interactive-color: #388774;

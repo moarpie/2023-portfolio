@@ -80,6 +80,10 @@
             color: var(--interactive-color);
         }
     }
+    .theme-toggle {
+        /*hack to make the menu items center*/
+        width: 204px;
+    }
     .toggle-button {
         color: var(--interactive-color);
         border: 1px solid var(--interactive-color);
