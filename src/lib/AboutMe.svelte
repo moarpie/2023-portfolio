@@ -10,7 +10,7 @@
             <img src={ProfileBlob} alt="">
         </div>
         <div class="card-wrapper">
-            <Card class="elevation-2">
+            <Card class="elevation-3">
                 <h2 class="title-small mb-2">
                     Facts about me
                 </h2>
@@ -18,7 +18,7 @@
                 <p class="mb-8">
                     Originally from Vendyssel, I now live Aalborg with my girlfriend and daughter. I enjoy hiking, building my own custom mechanical keyboards, and tinkering with various coding projects. My passion lies in UX design, where I strive to create meaningful products for users with a logical and practical approach.
                 </p>
-                <Button class="full-width" label="Show full CV" />
+                <Button class="full-width" label="Download full CV" />
             </Card>
         </div>
     </div>

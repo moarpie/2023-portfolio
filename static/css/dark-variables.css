@@ -1,15 +1,15 @@
 /**
  * Do not edit directly
- * Generated on Thu, 25 May 2023 18:52:48 GMT
+ * Generated on Wed, 14 Jun 2023 12:30:20 GMT
  */
 
 :root {
   --elevation-shadow-color: #000000a6;
   --card-background-color: #2E2B2F;
   --top-gradient-end-color: #00000000;
-  --top-gradient2-color: #4BB2994D;
-  --top-gradient1-color: #7B5AC44D;
-  --primary-gradient: linear-gradient(-45deg, #7B5AC4 0%, #4BB299 100%);
+  --top-gradient2-color: #4BB29966;
+  --top-gradient1-color: #7B5AC466;
+  --primary-gradient: linear-gradient(-45deg, #A781F7 0%, #55CBAE 100%);
   --canvas-color: #19171A;
   --interactive-color: #55CBAE;
   --default-color: #F8F7F9;

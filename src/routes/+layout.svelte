@@ -1,56 +1,13 @@
 <script>
-	import { onMount } from 'svelte';
-
-let isDarkMode = false; // Initial theme state
-let linkTag; // Reference to the <link> tag
-
-// Function to toggle the theme
-function toggleTheme() {
-    isDarkMode = !isDarkMode;
-    updateTheme();
-}
-
-// Function to update the theme based on user preference
-function updateTheme() {
-    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
-
-    // Update the href attribute of the <link> tag
-    const cssFilePath = isDarkMode ? '/css/dark-variables.css' : '/css/light-variables.css';
-    linkTag.href = cssFilePath;
-}
-
-// Load the initial theme CSS on component mount
-onMount(() => {
-const cssFilePath = isDarkMode ? '/css/dark-variables.css' : '/css/light-variables.css';
-
-// Create the <link> tag
-linkTag = document.createElement('link');
-linkTag.rel = 'stylesheet';
-linkTag.href = cssFilePath;
-
-// Append the <link> tag to the document head
-document.head.appendChild(linkTag);
-
-// Check user's system preference for dark or light mode
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    isDarkMode = true;
-} else {
-    isDarkMode = false;
-}
-
-// Apply the user preference
-updateTheme();
-});
+	
+    import Nav from "$lib/Nav.svelte";
 
 </script>
-<div class="gradient-container"></div>
-<button class="toggle-button" on:click={toggleTheme}>
-    Toggle Theme
-</button>
 
+<div class="gradient-container"></div>
+<Nav />
 
 <slot />
-
 
 <style lang="scss">
 @tailwind base;
