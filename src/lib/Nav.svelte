@@ -1,48 +1,11 @@
 <script>
-    import { onMount } from 'svelte';
+
+    import { isDarkMode } from '$lib/stores/store.js';
     import LightIcon from "$lib/assets/icons/light-mode.svg";
     import DarkIcon from "$lib/assets/icons/dark-mode.svg";
-    let isDarkMode = false; // Initial theme state
-    let linkTag; // Reference to the <link> tag
 
-    // Function to toggle the theme
-    function toggleTheme() {
-        isDarkMode = !isDarkMode;
-        updateTheme();
-    }
-
-    // Function to update the theme based on user preference
-    function updateTheme() {
-        document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
-
-        // Update the href attribute of the <link> tag
-        const cssFilePath = isDarkMode ? '/css/dark-variables.css' : '/css/light-variables.css';
-        linkTag.href = cssFilePath;
-    }
-
-    // Load the initial theme CSS on component mount
-    onMount(() => {
-    const cssFilePath = isDarkMode ? '/css/dark-variables.css' : '/css/light-variables.css';
-
-    // Create the <link> tag
-    linkTag = document.createElement('link');
-    linkTag.rel = 'stylesheet';
-    linkTag.href = cssFilePath;
-
-    // Append the <link> tag to the document head
-    document.head.appendChild(linkTag);
-
-    // Check user's system preference for dark or light mode
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        isDarkMode = true;
-    } else {
-        isDarkMode = false;
-    }
-
-    // Apply the user preference
-    updateTheme();
-    });
 </script>
+
 <div class="container px-4 pt-8">
     <div class="nav flex flex-col lg:flex-row justify-between items-center">
         <div class="logo">
@@ -59,7 +22,7 @@
             <div class="menu-item subtitle-large"><a href="#contact">Contact</a></div>
         </div>
         <div class="theme-toggle">
-            <button class="toggle-button" on:click={toggleTheme}>
+            <button class="toggle-button" on:click={() => isDarkMode.update(value => !value)}>
                 {#if isDarkMode}
                 <img class="toggle-button-icon" src={LightIcon} alt="">
                 <span>Lights on</span>
