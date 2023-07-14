@@ -48,12 +48,15 @@
     transition: background-color 200ms, color 200ms;
     }
     .section {
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
     @media (min-width: 1024px) {
         .section {
-            margin-top: 4rem;
+            margin-top: 8rem;
         }
+     }
+     .section-title {
+        margin-bottom: 2rem;
      }
 
     .jumbotron {

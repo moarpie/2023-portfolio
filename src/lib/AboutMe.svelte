@@ -16,7 +16,7 @@
                 </h2>
                 <p class="subtitle-small">I am <AgeCalc /> seconds old.</p>
                 <p class="mb-8">
-                    Originally from Vendyssel, I now live Aalborg with my girlfriend and daughter. I enjoy hiking, building my own custom mechanical keyboards, and tinkering with various coding projects. My passion lies in UX design, where I strive to create meaningful products for users with a logical and practical approach.
+                    Proident aliqua tempor tempor occaecat cillum sint fugiat. Laboris magna sint incididunt commodo amet voluptate in in nulla dolore. Quis cillum duis veniam reprehenderit tempor ullamco sunt.Irure irure minim ipsum dolor. Veniam nostrud dolore cillum culpa. Labore nisi enim cupidatat ullamco consequat. Esse ut et ut consequat esse et non. Nostrud minim eu ullamco minim.
                 </p>
                 <Button class="full-width" label="Download full CV" />
             </Card>

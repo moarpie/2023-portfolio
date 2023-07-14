@@ -4,20 +4,9 @@
     import Card from "$lib/Card.svelte";
     import AboutMe from "$lib/AboutMe.svelte";
     import Case from "$lib/Case.svelte";
-    let myPortfolioCases = [
-    {
-      image: 'http://placekitten.com/600/200',
-      title: 'Portfolio Case 1',
-      description: 'This is the description for portfolio case 1.',
-      link: 'https://example.com/portfolio-case-1'
-    },
-    {
-      image: 'http://placekitten.com/200/600',
-      title: 'Portfolio Case 2',
-      description: 'This is the description for portfolio case 2.',
-      link: 'https://example.com/portfolio-case-2'
-    }
-  ];
+    import Skills from "$lib/Skills.svelte";
+    import casesData from "$lib/data/cases.json";
+    import skillsData from "$lib/data/skills.json";
 
 </script>
 
@@ -27,14 +16,23 @@
 <p> <a href="about">about</a></p>
 
 <div class="container">
-    <div class="section">
-        <AboutMe />
+  <div id="about"></div>
+  <div class="section">
+    <AboutMe />
+  </div>
+  <div id="work"></div>
+  <div class="section">
+    <div class="section-title"><h2 class="display">My work</h2></div>
+    <div>
+      <Case cases={casesData} />
     </div>
-    <div class="section">
-        <div>
-            <Case portfolioCases={myPortfolioCases} />
-        </div>
+  </div>
+  <div class="section">
+    <div class="section-title"><h2 class="display">My skills</h2></div>
+    <div>
+      <Skills skills={skillsData}/>
     </div>
+  </div>
 </div>
 
 
@@ -56,5 +54,8 @@
 <Button class="full-width" label="This is some text"/>
 
 <style>
-
+  .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 </style>
