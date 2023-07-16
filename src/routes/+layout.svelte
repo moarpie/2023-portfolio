@@ -45,7 +45,7 @@
     text-rendering: optimizeLegibility;
     color: var(--default-color);
     background-color: var(--canvas-color);
-    transition: background-color 200ms, color 200ms;
+    transition: background-color 300ms ease-in, color 400ms ease-out;
     }
     .section {
         margin-top: 4rem;

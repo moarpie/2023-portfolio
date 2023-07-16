@@ -5,11 +5,11 @@
     import AboutMe from "$lib/AboutMe.svelte";
     import Case from "$lib/Case.svelte";
     import Skills from "$lib/Skills.svelte";
-    import casesData from "$lib/data/cases.json";
-    import skillsData from "$lib/data/skills.json";
+    import content from "$lib/data/content.json";
 
     import { onMount } from 'svelte';
     import { isDarkMode } from '$lib/stores/store.js';
+    import { dataset_dev } from "svelte/internal";
 
 
     let linkTag; // Reference to the <link> tag
@@ -75,19 +75,19 @@
 <div class="container">
   <div id="about"></div>
   <div class="section">
-    <AboutMe />
+    <AboutMe description={content.aboutMe}/>
   </div>
   <div id="work"></div>
   <div class="section">
     <div class="section-title"><h2 class="display">My work</h2></div>
     <div>
-      <Case cases={casesData} />
+      <Case cases={content.cases} />
     </div>
   </div>
   <div class="section">
     <div class="section-title"><h2 class="display">My skills</h2></div>
     <div>
-      <Skills skills={skillsData}/>
+      <Skills skills={content.skills}/>
     </div>
   </div>
 </div>

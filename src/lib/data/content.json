@@ -1,0 +1,52 @@
+{
+  "aboutMe" : "Est occaecat dolor in adipisicing id duis consectetur et reprehenderit ut do in est cupidatat quis. Enim id excepteur dolore proident ullamco culpa commodo. Nostrud et aliquip duis labore fugiat magna fugiat consequat. Anim aliquip labore aliquip nulla anim veniam dolor cillum. Qui non Lorem cillum fugiat culpa cillum ipsum.",
+  "cases": [
+    {
+      "image": "test.png",
+      "title": "Portfolio Case 1",
+      "description": "This is the description for portfolio case 1.",
+      "link": "https://example.com/portfolio-case-1"
+    },
+    {
+      "image": "test.png",
+      "title": "Portfolio Case 2",
+      "description": "This is the description for portfolio case 2.",
+      "link": "https://example.com/portfolio-case-2"
+    },
+    {
+      "image": "test.png",
+      "title": "Portfolio Case 3",
+      "description": "This is the description for portfolio case 3.",
+      "link": "https://example.com/portfolio-case-1"
+    },
+    {
+      "image": "test.png",
+      "title": "Portfolio Case 4",
+      "description": "This is the description for portfolio case 4.",
+      "link": "https://example.com/portfolio-case-1"
+    }
+  ],
+  "skills": [
+    {
+      "image": "design-systems.svg",
+      "title": "Design systems",
+      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt."
+    },
+    {
+      "image": "user-research.svg",
+      "title": "User research",
+      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt."
+    },
+    {
+      "image": "design-systems.svg",
+      "title": "Prototyping",
+      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt."
+    },
+    {
+      "image": "user-research.svg",
+      "title": "Something",
+      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt."
+    }
+  ]
+
+} 

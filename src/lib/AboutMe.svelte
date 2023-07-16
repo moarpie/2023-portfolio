@@ -2,6 +2,7 @@
     import Card from "$lib/Card.svelte";
     import Button from "$lib/Button.svelte";
     import AgeCalc from "$lib/AgeCalc.svelte";
+    export let description;
 </script>
 <div class="container px-4">
     <div class="about-me flex flex-col justify-center items-center md:flex-row ">
@@ -15,7 +16,7 @@
                 </h2>
                 <p class="subtitle-small">I am <AgeCalc /> seconds old.</p>
                 <p class="mb-8">
-                    Proident aliqua tempor tempor occaecat cillum sint fugiat. Laboris magna sint incididunt commodo amet voluptate in in nulla dolore. Quis cillum duis veniam reprehenderit tempor ullamco sunt.Irure irure minim ipsum dolor. Veniam nostrud dolore cillum culpa. Labore nisi enim cupidatat ullamco consequat. Esse ut et ut consequat esse et non. Nostrud minim eu ullamco minim.
+                    {description}
                 </p>
                 <Button class="full-width" label="Download full CV" />
             </Card>
