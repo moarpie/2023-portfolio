@@ -9,11 +9,11 @@
         <div class="skill">
             <div class="skill-content">
                 <div class="skill-image flex justify-center mb-2">
-                    <img src="/img/skills/{mySkills.image}" alt="">
+                    
                     {#if $isDarkMode}
-                    
+                        <img src="/img/skills/dark-{mySkills.image}" alt="">
                     {:else}
-                    
+                        <img src="/img/skills/light-{mySkills.image}" alt="">
                     {/if}
                 </div>
                 

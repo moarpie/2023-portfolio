@@ -17,9 +17,9 @@
         </div>
         <div class="menu w-full mt-6 md:mt-0 md:w-auto flex flex-col md:flex-row gap-6 order-4 md:order-2">
             <div class="menu-item subtitle-large text-center"><a href="#about">About me</a></div>
-            <div class="menu-item -mt-4 subtitle-large text-center"><a href="#work">Work</a></div>
-            <div class="menu-item -mt-4 subtitle-large text-center"><a href="#skills">Skills</a></div>
-            <div class="menu-item -mt-4 subtitle-large text-center"><a href="#contact">Contact</a></div>
+            <div class="menu-item -mt-4 md:-mt-0 subtitle-large text-center"><a href="#work">Work</a></div>
+            <div class="menu-item -mt-4 md:-mt-0 subtitle-large text-center"><a href="#skills">Skills</a></div>
+            <div class="menu-item -mt-4 md:-mt-0 subtitle-large text-center"><a href="#contact">Contact</a></div>
         </div>
         <div class="theme-toggle order-3">
             <button class="toggle-button" on:click={() => isDarkMode.update(value => !value)}>
