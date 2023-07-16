@@ -9,7 +9,7 @@
         <div class="skill">
             <div class="skill-content">
                 <div class="skill-image flex justify-center mb-2">
-                    <img src="src/lib/assets/img/skills/{mySkills.image}" alt="">
+                    <img src="/img/skills/{mySkills.image}" alt="">
                     {#if $isDarkMode}
                     
                     <span>Lights on</span>
