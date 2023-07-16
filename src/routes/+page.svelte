@@ -70,14 +70,7 @@
     });
 </script>
 
-store: {$isDarkMode} <br>
-<button on:click={() => isDarkMode.update(value => !value)}>
-  Toggle Dark Mode
-</button>
 <Header />
-
-
-<p> <a href="about">about</a></p>
 
 <div class="container">
   <div id="about"></div>

@@ -1,13 +1,12 @@
 <script>
     import Card from "$lib/Card.svelte";
-    import ProfileBlob from "$lib/assets/img/profile-blob.png";
     import Button from "$lib/Button.svelte";
     import AgeCalc from "$lib/AgeCalc.svelte";
 </script>
 <div class="container px-4">
     <div class="about-me flex flex-col justify-center items-center md:flex-row ">
         <div class="-mb-8 md:mb-0 profile-blob md:-mr-16">
-            <img src={ProfileBlob} alt="">
+            <img src="img/profile-blob.png" alt="">
         </div>
         <div class="card-wrapper">
             <Card class="elevation-3">

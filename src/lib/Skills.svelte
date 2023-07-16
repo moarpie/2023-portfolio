@@ -12,11 +12,9 @@
                     <img src="/img/skills/{mySkills.image}" alt="">
                     {#if $isDarkMode}
                     
-                    <span>Lights on</span>
-                  {:else}
-
-                    <span>Lights off</span>
-                  {/if}
+                    {:else}
+                    
+                    {/if}
                 </div>
                 
                 <h3 class="title-small mb-1 text-center">{mySkills.title}</h3>
@@ -25,6 +23,12 @@
         </div>
     {/each}
 </div>
+
+<br><br><br>
+store: {$isDarkMode} <br>
+<button on:click={() => isDarkMode.update(value => !value)}>
+  Toggle Dark Mode
+</button>
 
 <style lang="scss">
     .skill-content {
