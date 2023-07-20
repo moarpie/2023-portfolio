@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 16 Jul 2023 18:29:46 GMT
+ * Generated on Thu, 20 Jul 2023 20:01:30 GMT
  */
 
 :root {
@@ -50,6 +50,11 @@
   --line-height-tight: 1.1;
   --line-height-normal: 1.2;
   --line-height-relaxed: 1.45;
+  --typo-interactive-text-decoration: underline;
+  --typo-interactive-font-size: 16;
+  --typo-interactive-line-height: 120%;
+  --typo-interactive-font-weight: 500;
+  --typo-interactive-font-family: Outfit;
   --typo-jumbotron-font-size: 16rem;
   --typo-jumbotron-line-height: 100%;
   --typo-jumbotron-font-weight: 600;

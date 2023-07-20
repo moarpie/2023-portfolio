@@ -1,13 +1,16 @@
 <script>
 	
     import Nav from "$lib/Nav.svelte";
+    import Footer from "$lib/footer.svelte";
 
 </script>
 
-<div class="gradient-container"></div>
+<div class="gradient-container-top"></div>
 <Nav />
 
 <slot />
+
+<Footer />
 
 <style lang="scss">
 @tailwind base;
@@ -17,7 +20,7 @@
 @import "../css/reset.css";
 @import "/css/variables.css";
 :global {
-    .gradient-container {
+    .gradient-container-top {
         position: absolute;
         z-index: -1;
         height: 100vh;
@@ -46,6 +49,18 @@
     color: var(--default-color);
     background-color: var(--canvas-color);
     transition: background-color 300ms ease-in, color 400ms ease-out;
+    }
+    a {
+        transition: color 100ms ease-in, color 100ms ease-out;
+        color: var(--interactive-color);
+        &:hover {
+            color: var(--interactive-color-hover);
+        }
+        font-family: var(--typo-interactive-font-family);
+        font-size: var(--typo-interactive-font-size);
+        line-height: var(--typo-interactive-line-height);
+        font-weight: var(--typo-interactive-font-weight);
+        text-decoration: var(--typo-interactive-text-decoration);;
     }
     .section {
         margin-top: 4rem;

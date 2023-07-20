@@ -91,25 +91,6 @@
     </div>
   </div>
 </div>
-
-
-<br><br><br><br><br><br><br><br><br><br>
-<Card class="elevation-1">
-    <h1>Card stuff here!</h1>
-</Card>
-
-<br><br>
-
-<br><br>
-<Card class="elevation-3">
-    <h1>Card stuff here!</h1>
-</Card>
-    <br><br>
-<Card class="elevation-4">
-    <h1>Card stuff here!</h1>
-</Card>
-<Button class="full-width" label="This is some text"/>
-
 <style>
   .section-title {
     text-align: center;

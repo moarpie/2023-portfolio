@@ -41,11 +41,20 @@
         fill: var(--default-color);
     }
     .menu-item {
-        
-        &:hover {
-            transition: 200ms;
-            color: var(--interactive-color);
+        a {
+            /*Override for default a styling*/
+            font-family: var(--title-font-family);
+            font-weight: var(--title-font-weight);
+            
+            color: var(--default-color);
+            text-decoration: none;
+            &:hover {
+                transition: 200ms;
+                color: var(--interactive-color);
+            }
         }
+        
+        
     }
     .theme-toggle {
         /*hack to make the menu items center*/
