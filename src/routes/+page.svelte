@@ -72,7 +72,7 @@
 
 <Header />
 
-<div class="container">
+<div class="container px-4 md:px-0">
   <div id="about"></div>
   <div class="section">
     <AboutMe description={content.aboutMe}/>

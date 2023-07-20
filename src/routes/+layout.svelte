@@ -29,16 +29,16 @@
         height: 100vh;
         width: 100vw;
         background: radial-gradient(
-            circle clamp(20vw, 40vw, 50vw) /*circle size*/
+            circle clamp(30vw, 40vw, 50vw) /*circle size*/
             at clamp(30vw, 40vw, 50vw) /*x position*/
-            clamp(-10vw, -20vw, -30vw), /*y position*/
+            clamp(-10vw, -50vw, -100vw), /*y position*/
             var(--top-gradient1-color) 0%,
             var(--top-gradient-end-color) 100%
         ),
             radial-gradient(
-            circle clamp(20vw, 40vw, 50vw) /*circle size*/
+            circle clamp(30vw, 40vw, 50vw) /*circle size*/
             at clamp(70vw, 60vw, 50vw) /*x position*/
-            clamp(-10vw, -20vw, -30vw), /*y position*/
+            clamp(-10vw, -50vw, -80vw), /*y position*/
             var(--top-gradient2-color) 0%,
             var(--top-gradient-end-color) 100%
         ) no-repeat;
