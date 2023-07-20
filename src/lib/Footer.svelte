@@ -5,21 +5,21 @@
 </script>
 
 <div class="footer mb-16">
-    <div class="icon-container grid grid-cols-1 md:grid-cols-3">
+    <div class="icon-container grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0">
         <div class="icon flex flex-col gap-2 items-center">
-            <img src={liIcon} alt="">
-            <a href="#">LinkedIn</a>
+            <img src={liIcon} alt="LinkedIn icon">
+            <a href="https://www.linkedin.com/in/mj-ux/">LinkedIn</a>
         </div>
         <div class="icon flex flex-col gap-2 items-center">
-            <img src={mailIcon} alt="">
-            <a href="#">hello@mjux.dk</a>
+            <img src={mailIcon} alt="Email icon">
+            <a href="mailto:michael@vendila.dk">michael@vendila.dk</a>
         </div>
         <div class="icon flex flex-col gap-2 items-center">
-            <img src={phone} alt="">
-            <a href="#">+45 28 91 44 41</a>
+            <img src={phone} alt="Telephone icon">
+            <a href="tel:+4528914441">+45 28 91 44 41</a>
         </div>
     </div>
-    <div class="signoff text-center mt-32">
+    <div class="signoff text-center mt-20 md:mt-32">
         By Michael Jensen - 2023
     </div>
 

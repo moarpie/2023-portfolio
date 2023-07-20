@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 20 Jul 2023 20:01:30 GMT
+ * Generated on Thu, 20 Jul 2023 21:21:13 GMT
  */
 
 :root {
@@ -32,17 +32,21 @@
   --card-border-radius: 8px;
   --button-padding-x: 16px;
   --button-height: 40px;
+  --button-label-color: #fff;
+  --button-secondary-background-color-active: #1C3731;
+  --button-secondary-background-color-hover: #225A4D;
+  --button-secondary-background-color-focus: radial-gradient(#55CBAE, #225A4D);
+  --button-secondary-background-color: #388774;
   --button-border-radius: 4px;
   --button-label-letter-spacing: 0;
   --button-label-font-size: 1.2rem;
   --button-label-line-height: 120%;
   --button-label-font-weight: 400;
   --button-label-font-family: Outfit;
-  --button-label-color: #fff;
-  --button-background-color-active: #443563;
-  --button-background-color-hover: #614A96;
-  --button-background-color-focus: radial-gradient(#A781F7, #443563);
-  --button-background-color: #7B5AC4;
+  --button-primary-background-color-active: #443563;
+  --button-primary-background-color-hover: #614A96;
+  --button-primary-background-color-focus: radial-gradient(#A781F7, #443563);
+  --button-primary-background-color: #7B5AC4;
   --body-font-weight: 400;
   --title-font-weight: 400;
   --body-font-family: Inter;

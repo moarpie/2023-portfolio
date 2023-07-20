@@ -1,16 +1,19 @@
 <script>
-	
     import Nav from "$lib/Nav.svelte";
     import Footer from "$lib/Footer.svelte";
-
 </script>
 
 <div class="gradient-container-top"></div>
+
+
 <Nav />
 
 <slot />
+<div class="container">
+    <Footer />
+</div>
 
-<Footer />
+
 
 <style lang="scss">
 @tailwind base;
@@ -61,6 +64,9 @@
         line-height: var(--typo-interactive-line-height);
         font-weight: var(--typo-interactive-font-weight);
         text-decoration: var(--typo-interactive-text-decoration);;
+    }
+    .vague {
+        color: var(--vague-color);
     }
     .section {
         margin-top: 4rem;

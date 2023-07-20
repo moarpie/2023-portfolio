@@ -18,7 +18,7 @@
                 </div>
                 
                 <h3 class="title-small mb-1 text-center">{mySkills.title}</h3>
-                <p class="subtitle-small text-center">{mySkills.description}</p>
+                <p class=" text-center vague">{mySkills.description}</p>
             </div>
         </div>
     {/each}

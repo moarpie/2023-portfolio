@@ -7,7 +7,7 @@
 <div class="container px-4">
     <div class="about-me flex flex-col justify-center items-center md:flex-row ">
         <div class="-mb-8 md:mb-0 profile-blob md:-mr-16">
-            <img src="img/profile-blob.png" alt="">
+            <img src="img/profile-blob.png" alt="A headshot photograph of me">
         </div>
         <div class="card-wrapper">
             <Card class="elevation-3">
@@ -18,7 +18,7 @@
                 <p class="mb-8">
                     {description}
                 </p>
-                <Button class="full-width" label="Download full CV" />
+                <Button class="full-width secondary" label="Download full CV" />
             </Card>
         </div>
     </div>

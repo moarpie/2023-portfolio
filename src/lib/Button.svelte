@@ -11,7 +11,7 @@
 
 <a class="button {$$props.class}" on:click={handleClick} href="{link}">{label}</a>
 
-<style>
+<style lang="scss">
    /* @import "../css/vars/_variables.scss"; */
     /*strips all standard link styling*/
     a {
@@ -24,10 +24,10 @@
 
     }
     .button {
+        color: var(--button-label-color);
         text-align: center;
         transition: background-color 250ms;
         background: var(--button-background-color);
-        color: var(--button-label-color);
         height: var(--button-height);
         padding-left: var(--button-padding-x);
         padding-right: var(--button-padding-x);
@@ -37,15 +37,31 @@
         line-height: var(--button-label-line-height);
         letter-spacing: var(--button-label-letter-spacing);
     }
-    .button:hover {
-        background: var(--button-background-color-hover);
+    .primary {
+        background: var(--button-primary-background-color);
+        &:hover {
+            background: var(--button-primary-background-color-hover);
+        }
+        &:active {
+            background: var(--button-primary-background-color-active);
+        }
+        &:focus {
+            background: var(--button-primary-background-color-focus);
+        }
     }
-    .button:active {
-        background: var(--button-background-color-active);
+    .secondary {
+        background: var(--button-secondary-background-color);
+        &:hover {
+            background: var(--button-secondary-background-color-hover);
+        }
+        &:active {
+            background: var(--button-secondary-background-color-active);
+        }
+        &:focus {
+            background: var(--button-secondary-background-color-focus);
+        }
     }
-    .button:focus {
-        background: var(--button-background-color-focus);
-    }
+
     .full-width {
             width: 100%;
         } 

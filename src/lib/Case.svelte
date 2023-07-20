@@ -9,7 +9,7 @@
             
             <h3 class="title-small mb-1">{myCase.title}</h3>
             <p class="subtitle-small">{myCase.description}</p>
-            <Button link={myCase.link} label="View case" />
+            <Button class="primary" link={myCase.link} label="View case" />
         </div>
     {/each}
 </div>
