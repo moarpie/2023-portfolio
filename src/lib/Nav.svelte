@@ -3,6 +3,8 @@
     import { isDarkMode } from '$lib/stores/store.js';
     import LightIcon from "$lib/assets/icons/light-mode.svg";
     import DarkIcon from "$lib/assets/icons/dark-mode.svg";
+    import ModeSwitcher from "$lib/ModeSwitcher.svelte";
+
 
 </script>
 
@@ -34,6 +36,8 @@
         </div>
     </div>
 </div>
+
+<ModeSwitcher />
 
 
 <style lang="scss">
