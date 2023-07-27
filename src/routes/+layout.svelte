@@ -63,7 +63,7 @@
         font-size: var(--typo-interactive-font-size);
         line-height: var(--typo-interactive-line-height);
         font-weight: var(--typo-interactive-font-weight);
-        text-decoration: var(--typo-interactive-text-decoration);;
+        text-decoration: var(--typo-interactive-text-decoration);
     }
     .vague {
         color: var(--vague-color);
@@ -92,7 +92,7 @@
     .display {
     font-family: var(--typo-display-font-family);
     font-weight: var(--typo-display-font-weight);
-    font-size: clamp(1rem, 1.2rem + 2.5vw, var(--typo-display-font-size));
+    font-size: clamp(3rem, 3rem + 0vw, var(--typo-display-font-size));
     /* font-size: var(--typo-display-font-size); */
     line-height: var(--typo-display-line-height);
     }

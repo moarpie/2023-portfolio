@@ -30,22 +30,26 @@
     {
       "image": "design-systems.svg",
       "title": "Design systems",
-      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt."
+      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt.",
+      "altText": "An icon describing the skill in question"
     },
     {
       "image": "user-research.svg",
       "title": "User research",
-      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt."
+      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt.",
+      "altText": "An icon describing the skill in question"
     },
     {
-      "image": "design-systems.svg",
+      "image": "prototyping.svg",
       "title": "Prototyping",
-      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt."
+      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt.",
+      "altText": "An icon describing the skill in question"
     },
     {
-      "image": "user-research.svg",
-      "title": "Something",
-      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt."
+      "image": "accessibility.svg",
+      "title": "Accessibility",
+      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt.",
+      "altText": "An icon describing the skill in question"
     }
   ]
 
