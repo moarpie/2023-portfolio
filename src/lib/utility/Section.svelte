@@ -3,7 +3,7 @@
     export let title;
 </script>
 
-<div class="spacer mt-16 md:mt-24 lg:mt-32"></div>
+<div class="spacer mt-16 md:mt-24"></div>
 <div id={anchor} class="anchor"></div>
 <div class="section pt-10">
     <div id={anchor} class="anchor"></div>

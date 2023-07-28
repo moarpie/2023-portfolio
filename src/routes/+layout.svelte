@@ -1,7 +1,7 @@
 <script>
     import Nav from "$lib/components/Nav.svelte";
     import Footer from "$lib/components/Footer.svelte";
-
+    import Section from "$lib/utility/Section.svelte";
     import { isDarkMode } from '$lib/stores/store.js';
     import { onMount } from 'svelte';
 
@@ -70,7 +70,12 @@
 
 <slot />
 
-<Footer />
+<Section title="Get in touch" anchor="contact">
+    <Footer />
+</Section>
+
+
+
 
 <style lang="scss">
 @tailwind base;
@@ -139,7 +144,7 @@
     .display {
     font-family: var(--typo-display-font-family);
     font-weight: var(--typo-display-font-weight);
-    font-size: clamp(3rem, 3rem + 0vw, var(--typo-display-font-size));
+    font-size: clamp(2rem, 3rem + 0vw, var(--typo-display-font-size));
     /* font-size: var(--typo-display-font-size); */
     line-height: var(--typo-display-line-height);
     }

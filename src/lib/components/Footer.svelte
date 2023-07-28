@@ -4,7 +4,7 @@
     import phone from '$lib/assets/icons/phone.svg';
 </script>
 
-<div class="container footer mt-32 md:mt-48 lg:mt-60 mb-16">
+<div class="container footer mt-24 md:mt-32 lg:mt-40 mb-16">
     <div class="icon-container grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0">
         <div class="icon flex flex-col gap-2 items-center">
             <img src={liIcon} alt="LinkedIn icon">

@@ -1,8 +1,8 @@
 <script>
 
 </script>
-<div class="header container px-4">
-    <div class="text-center mt-4 md:mt-16">
+<div class="header container">
+    <div class="text-center mt-16 md:mt-24">
         <div class="jumbotron">Hello.</div>
         
     </div>
