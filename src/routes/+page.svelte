@@ -1,5 +1,6 @@
 <script>
 	import Header from "$lib/components/Header.svelte";
+	import Section from "$lib/utility/Section.svelte";
 	import Button from "$lib/components/Button.svelte";
 	import Card from "$lib/components/Card.svelte";
 	import AboutMe from "$lib/templates/AboutMe.svelte";
@@ -18,29 +19,19 @@
 <Header />
 
 <div class="container">
-	
-	<div class="section">
-        <div id="about"></div>
-		<AboutMe description={content.aboutMe}/>
-	</div>
-	<div id="work"></div>
-	<div class="section">
-		<div class="section-title"><h2 class="display">My work</h2></div>
-		<div>
-			<Case cases={content.cases} />
-		</div>
-	</div>
-	<div class="section">
-		<div class="section-title"><h2 class="display">My skills</h2></div>
-		<div>
-			<Skills skills={content.skills}/>
-		</div>
-	</div>
+	<Section title="About me" anchor="about">  
+        <AboutMe description={content.aboutMe}/>
+    </Section>
+
+    <Section title="My Work" anchor="work">  
+        <Case cases={content.cases} />
+    </Section>
+
+    <Section title="My skills" anchor="skills">  
+        <Skills skills={content.skills}/>
+    </Section>
 </div>
 
 <style>
-  .section-title {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
+
 </style>

@@ -69,11 +69,8 @@
 <Nav />
 
 <slot />
-<div class="container">
-    <Footer />
-</div>
 
-
+<Footer />
 
 <style lang="scss">
 @tailwind base;
@@ -128,17 +125,7 @@
     .vague {
         color: var(--vague-color);
     }
-    .section {
-        margin-top: 0rem;
-    }
-    @media (min-width: 1024px) {
-        .section {
-            margin-top: 10rem;
-        }
-     }
-     .section-title {
-        margin-bottom: 2rem;
-     }
+
 
     .jumbotron {
     font-family: var(--typo-jumbotron-font-family);
