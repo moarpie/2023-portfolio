@@ -24,15 +24,16 @@
     }
   </script>
   
-  <div class="ml-12 switch-container">
+<div class="switch-container">
     <!-- Bind the 'checked' attribute of the input to the 'darkMode' variable -->
-    <input type="checkbox" id="switch" bind:checked={darkMode} on:click={toggleDarkMode}/>
-    <label for="switch">
-      <img class="dark" src="{DarkIcon}" alt="">
-      <img class="light" src="{LightIcon}" alt="">
-      <span class="ball"></span>
+    <input type="checkbox" id="switch" bind:checked={darkMode} on:click={toggleDarkMode} aria-label="Toggle dark mode">
+    <label for="switch" aria-hidden="true">
+        <img class="dark" src="{LightIcon}" alt="">
+        <img class="light" src="{DarkIcon}" alt="">
+        <span class="ball" aria-hidden="true"></span>
     </label>
-  </div>
+</div>
+
   
 
 <style lang="scss">
@@ -48,8 +49,8 @@
         height: 40px;
         justify-content: space-between;
         align-items: center;
-        padding: 0 6px;
-        background: #222;
+        padding: 0 8px;
+        background: var(--modeswitcher-bg-light);
         border-radius: 50px;
         cursor: pointer;
         position: relative;
@@ -95,7 +96,7 @@
         height: 24px;
         top: 8px;
         left: 8px;
-        background: #fff;
+        background: var(--modeswitcher-ball);
         opacity: 1;
         border-radius: 50%;
         transition: 0.3s;
@@ -104,10 +105,7 @@
         transition: 0.3s;
     }
     input:checked + label {
-        background: #c0c0c0;
-    }
-    input:checked + label .ball {
-        background: #222;
+        background: var(--modeswitcher-bg-dark)
     }
     input {
         display: none;

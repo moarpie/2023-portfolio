@@ -1,9 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Thu, 27 Jul 2023 14:33:36 GMT
+ * Generated on Fri, 28 Jul 2023 07:15:25 GMT
  */
 
 :root {
+  --modeswitcher-ball: #ECE4F1;
+  --modeswitcher-bg-light: #368270;
+  --modeswitcher-bg-dark: #614A96;
   --elevation-4-type: dropShadow;
   --elevation-4-color: #00000033;
   --elevation-4-spread: 0;

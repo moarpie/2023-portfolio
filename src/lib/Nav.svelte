@@ -24,20 +24,12 @@
             <div class="menu-item -mt-4 md:-mt-0 subtitle-large text-center"><a href="#contact">Contact</a></div>
         </div>
         <div class="theme-toggle order-3">
-            <button class="toggle-button" on:click={() => isDarkMode.update(value => !value)}>
-                {#if $isDarkMode}
-                <img class="toggle-button-icon" src={LightIcon} alt="">
-                <span>Lights on</span>
-              {:else}
-              <img class="toggle-button-icon" src={DarkIcon} alt="">
-                <span>Lights off</span>
-              {/if}
-            </button>
+            <ModeSwitcher />
         </div>
     </div>
 </div>
 
-<ModeSwitcher />
+
 
 
 <style lang="scss">
@@ -60,30 +52,5 @@
         
         
     }
-    .theme-toggle {
-        /*hack to make the menu items center*/
-        // width: 204px;
-    }
-    .toggle-button-icon {
-        color: var(--interactive-color);
-        width: 20px;
-        height: 20px;
-        display: inline-block;
-        margin-right: 4px;
-        margin-bottom: 2px;
-    }
-   
 
-    .toggle-button {
-        color: var(--interactive-color);
-        border: 1px solid var(--interactive-color);
-        border-radius: var(--button-border-radius);
-        height: var(--button-height);
-        padding-right: var(--button-padding-x);
-        padding-left: var(--button-padding-x);
-        font-family: var(--button-label-font-family);
-        font-size: var(--button-label-font-size);
-        line-height: var(--button-label-line-height);
-        letter-spacing: var(--button-label-letter-spacing);
-    }
 </style>
