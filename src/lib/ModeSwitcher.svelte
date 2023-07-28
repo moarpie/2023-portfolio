@@ -57,19 +57,20 @@
     }
 
     label .light {
-        transition: 0.3s;
+        transition: 0.4s;
+        transform: rotate(0deg);
     }
     label .dark {
-        transition: 0.3s;
+        transition: 0.4s;
     }
     label .ball {
         display: none;
     }
     input:checked + label .dark {
-        transform: translateX(0px);
+        transform: translateX(0px) rotate(180deg);
     }
     input:checked + label .light {
-        transform: translateX(-42px);
+        transform: translateX(-42px) rotate(180deg);
     }
     input:checked + label .ball {
         transform: translateX(32px);
@@ -99,10 +100,10 @@
         background: var(--modeswitcher-ball);
         opacity: 1;
         border-radius: 50%;
-        transition: 0.3s;
+        transition: 0.4s;
     }
     label {
-        transition: 0.3s;
+        transition: 0.4s;
     }
     input:checked + label {
         background: var(--modeswitcher-bg-dark)
