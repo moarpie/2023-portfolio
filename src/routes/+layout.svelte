@@ -1,6 +1,7 @@
 <script>
-    import Nav from "$lib/Nav.svelte";
-    import Footer from "$lib/Footer.svelte";
+    import Nav from "$lib/components/Nav.svelte";
+    import Footer from "$lib/components/Footer.svelte";
+
     import { isDarkMode } from '$lib/stores/store.js';
     import { onMount } from 'svelte';
 
@@ -128,11 +129,11 @@
         color: var(--vague-color);
     }
     .section {
-        margin-top: 4rem;
+        margin-top: 0rem;
     }
     @media (min-width: 1024px) {
         .section {
-            margin-top: 8rem;
+            margin-top: 10rem;
         }
      }
      .section-title {

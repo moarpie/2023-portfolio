@@ -4,6 +4,12 @@ export default {
   theme: {
     container: {
       center: true,
+      padding: {
+        DEFAULT: '1rem',
+        md: '1rem',
+        lg: '1rem',
+
+      }
     }
   },
   plugins: [],

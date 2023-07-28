@@ -24,12 +24,6 @@
     {/each}
 </div>
 
-<br><br><br>
-store: {$isDarkMode} <br>
-<button on:click={() => isDarkMode.update(value => !value)}>
-  Toggle Dark Mode
-</button>
-
 <style lang="scss">
     .skill-content {
         max-width: 24rem;

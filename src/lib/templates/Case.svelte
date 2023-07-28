@@ -1,6 +1,6 @@
 <script>
     export let cases = [];
-    import Button from "$lib/Button.svelte";
+    import Button from "$lib/components/Button.svelte";
 </script>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
     {#each cases as myCase}

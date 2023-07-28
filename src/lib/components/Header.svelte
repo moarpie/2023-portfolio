@@ -1,5 +1,5 @@
 <script>
-    // import Button from "./Button.svelte";
+
 </script>
 <div class="header container px-4">
     <div class="text-center mt-4 md:mt-16">
@@ -13,7 +13,7 @@
         <h1 class="subtitle-large">I convert caffeine and user insights to pixels</h1>
     </div>
     <div class="text-center">
-        <!-- <Button label="See what I do" link="#"/> -->
+
     </div>
 </div>
 
@@ -34,8 +34,6 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
-}
-
-
+    }
 
 </style>
