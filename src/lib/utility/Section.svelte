@@ -8,7 +8,7 @@
 <div class="section pt-10">
     <div id={anchor} class="anchor"></div>
 
-    <h2 class="display mb-10 md:mb-16 text-center">
+    <h2 class="title-large mb-10 md:mb-16 text-center">
         {title}
     </h2>
 

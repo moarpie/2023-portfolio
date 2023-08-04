@@ -1,6 +1,8 @@
 <script>
     import Button from "$lib/components/Button.svelte";
+    import CaseHeader from "$lib/components/CaseHeader.svelte";
 </script>
+<CaseHeader title="case title here" subtitle="subtitle here"></CaseHeader>    
 <div class="container pt-60">
     layout
     <slot />

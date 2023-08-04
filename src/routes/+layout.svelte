@@ -131,61 +131,183 @@
         color: var(--vague-color);
     }
 
+    /*Responsive typography styling*/
 
+    /*Jumbotron*/
     .jumbotron {
-    font-family: var(--typo-jumbotron-font-family);
-    font-weight: var(--typo-jumbotron-font-weight);
-    /* font-size: calc(var(--typo-jumbotron-font-size) * 0.9); */
-    font-size: clamp(2rem, 3rem + 15vw, var(--typo-jumbotron-font-size));
-    line-height: var(--typo-jumbotron-line-height);
+        font-family: var(--typo-sm-sm-jumbotron-font-family);
+        font-weight: var(--typo-sm-jumbotron-font-weight);
+        font-size: var(--typo-sm-jumbotron-font-size);
+        line-height: var(--typo-sm-jumbotron-line-height);
+    }
+    
+    @media all and (min-width: 768px) {
+        .jumbotron {
+            font-family: var(--typo-md-jumbotron-font-family);
+            font-weight: var(--typo-md-jumbotron-font-weight);
+            font-size: var(--typo-md-jumbotron-font-size);
+            line-height: var(--typo-md-jumbotron-line-height);
+        }
+    }
+    @media all and (min-width: 1024px) {
+        .jumbotron {
+            font-family: var(--typo-lg-jumbotron-font-family);
+            font-weight: var(--typo-lg-jumbotron-font-weight);
+            font-size: var(--typo-lg-jumbotron-font-size);
+            line-height: var(--typo-lg-jumbotron-line-height);
+        }
     }
 
-
+    /*Display*/
     .display {
-    font-family: var(--typo-display-font-family);
-    font-weight: var(--typo-display-font-weight);
-    font-size: clamp(2rem, 3rem + 0vw, var(--typo-display-font-size));
-    /* font-size: var(--typo-display-font-size); */
-    line-height: var(--typo-display-line-height);
-    }
+            font-family: var(--typo-sm-sm-display-font-family);
+            font-weight: var(--typo-sm-display-font-weight);
+            font-size: var(--typo-sm-display-font-size);
+            line-height: var(--typo-sm-display-line-height);
+        }
+        
+        @media all and (min-width: 768px) {
+            .display {
+                font-family: var(--typo-md-display-font-family);
+                font-weight: var(--typo-md-display-font-weight);
+                font-size: var(--typo-md-display-font-size);
+                line-height: var(--typo-md-display-line-height);
+            }
+        }
+        @media all and (min-width: 1024px) {
+            .display {
+                font-family: var(--typo-lg-display-font-family);
+                font-weight: var(--typo-lg-display-font-weight);
+                font-size: var(--typo-lg-display-font-size);
+                line-height: var(--typo-lg-display-line-height);
+            }
+        }
+        
 
-    .title-large,
-    .title-medium,
-    .title-small {
-    font-family: var(--title-font-family);
-    font-weight: var(--title-font-weight);
-    }
-
+    /*title-large*/
     .title-large {
-    font-size: var(--typo-title-large-font-size);
-    line-height: var(--typo-title-large-line-height);
-    }
+            font-family: var(--typo-sm-sm-title-large-font-family);
+            font-weight: var(--typo-sm-title-large-font-weight);
+            font-size: var(--typo-sm-title-large-font-size);
+            line-height: var(--typo-sm-title-large-line-height);
+        }
+        
+        @media all and (min-width: 768px) {
+            .title-large {
+                font-family: var(--typo-md-title-large-font-family);
+                font-weight: var(--typo-md-title-large-font-weight);
+                font-size: var(--typo-md-title-large-font-size);
+                line-height: var(--typo-md-title-large-line-height);
+            }
+        }
+        @media all and (min-width: 1024px) {
+            .title-large {
+                font-family: var(--typo-lg-title-large-font-family);
+                font-weight: var(--typo-lg-title-large-font-weight);
+                font-size: var(--typo-lg-title-large-font-size);
+                line-height: var(--typo-lg-title-large-line-height);
+            }
+        }
 
+    /*title-medium*/
     .title-medium {
-    font-size: var(--typo-title-medium-font-size);
-    line-height: var(--typo-title-medium-line-height);
-    }
+            font-family: var(--typo-sm-sm-title-medium-font-family);
+            font-weight: var(--typo-sm-title-medium-font-weight);
+            font-size: var(--typo-sm-title-medium-font-size);
+            line-height: var(--typo-sm-title-medium-line-height);
+        }
+        
+        @media all and (min-width: 768px) {
+            .title-medium {
+                font-family: var(--typo-md-title-medium-font-family);
+                font-weight: var(--typo-md-title-medium-font-weight);
+                font-size: var(--typo-md-title-medium-font-size);
+                line-height: var(--typo-md-title-medium-line-height);
+            }
+        }
+        @media all and (min-width: 1024px) {
+            .title-medium {
+                font-family: var(--typo-lg-title-medium-font-family);
+                font-weight: var(--typo-lg-title-medium-font-weight);
+                font-size: var(--typo-lg-title-medium-font-size);
+                line-height: var(--typo-lg-title-medium-line-height);
+            }
+        }
 
+    /*title-small*/
     .title-small {
-    font-size: var(--typo-title-small-font-size);
-    line-height: var(--typo-title-small-line-height);
-    }
+            font-family: var(--typo-sm-sm-title-small-font-family);
+            font-weight: var(--typo-sm-title-small-font-weight);
+            font-size: var(--typo-sm-title-small-font-size);
+            line-height: var(--typo-sm-title-small-line-height);
+        }
+        
+        @media all and (min-width: 768px) {
+            .title-small {
+                font-family: var(--typo-md-title-small-font-family);
+                font-weight: var(--typo-md-title-small-font-weight);
+                font-size: var(--typo-md-title-small-font-size);
+                line-height: var(--typo-md-title-small-line-height);
+            }
+        }
+        @media all and (min-width: 1024px) {
+            .title-small {
+                font-family: var(--typo-lg-title-small-font-family);
+                font-weight: var(--typo-lg-title-small-font-weight);
+                font-size: var(--typo-lg-title-small-font-size);
+                line-height: var(--typo-lg-title-small-line-height);
+            }
+        }
 
-    .subtitle-large,
-    .subtitle-small {
-    font-family: var(--subtitle-font-family);
-    font-weight: var(--subtitle-font-weight);
-    }
-
+    /*subtitle-large*/
     .subtitle-large {
-    font-size: var(--typo-subtitle-large-font-size);
-    line-height: var(--typo-subtitle-large-line-height);
-    }
+            font-family: var(--typo-sm-sm-subtitle-large-font-family);
+            font-weight: var(--typo-sm-subtitle-large-font-weight);
+            font-size: var(--typo-sm-subtitle-large-font-size);
+            line-height: var(--typo-sm-subtitle-large-line-height);
+        }
+        
+        @media all and (min-width: 768px) {
+            .subtitle-large {
+                font-family: var(--typo-md-subtitle-large-font-family);
+                font-weight: var(--typo-md-subtitle-large-font-weight);
+                font-size: var(--typo-md-subtitle-large-font-size);
+                line-height: var(--typo-md-subtitle-large-line-height);
+            }
+        }
+        @media all and (min-width: 1024px) {
+            .subtitle-large {
+                font-family: var(--typo-lg-subtitle-large-font-family);
+                font-weight: var(--typo-lg-subtitle-large-font-weight);
+                font-size: var(--typo-lg-subtitle-large-font-size);
+                line-height: var(--typo-lg-subtitle-large-line-height);
+            }
+        }
 
+    /*subtitle-small*/
     .subtitle-small {
-    font-size: var(--typo-subtitle-small-font-size);
-    line-height: var(--typo-subtitle-small-line-height);
-    }
+            font-family: var(--typo-sm-sm-subtitle-small-font-family);
+            font-weight: var(--typo-sm-subtitle-small-font-weight);
+            font-size: var(--typo-sm-subtitle-small-font-size);
+            line-height: var(--typo-sm-subtitle-small-line-height);
+        }
+        
+        @media all and (min-width: 768px) {
+            .subtitle-small {
+                font-family: var(--typo-md-subtitle-small-font-family);
+                font-weight: var(--typo-md-subtitle-small-font-weight);
+                font-size: var(--typo-md-subtitle-small-font-size);
+                line-height: var(--typo-md-subtitle-small-line-height);
+            }
+        }
+        @media all and (min-width: 1024px) {
+            .subtitle-small {
+                font-family: var(--typo-lg-subtitle-small-font-family);
+                font-weight: var(--typo-lg-subtitle-small-font-weight);
+                font-size: var(--typo-lg-subtitle-small-font-size);
+                line-height: var(--typo-lg-subtitle-small-line-height);
+            }
+        }
 
     p {
     font-family: var(--body-font-family);

@@ -8,10 +8,11 @@
     {#each skills as mySkills}
         <div class="skill">
             <div class="skill-content">
-                <div class="skill-image flex justify-center mb-2">
+                <div class="skill-image flex justify-center mb-6">
                     
                     {#if $isDarkMode}
-                        <img src="/img/skills/dark-{mySkills.image}" alt="{mySkills.altText}">
+                        <img class="" src="/img/skills/dark-{mySkills.image}" alt="{mySkills.altText}">
+                        <img class="blur-md absolute opacity-30" src="/img/skills/dark-{mySkills.image}" alt="{mySkills.altText}">
                     {:else}
                         <img src="/img/skills/light-{mySkills.image}" alt="{mySkills.altText}">
                     {/if}
