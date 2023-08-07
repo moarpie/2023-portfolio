@@ -11,10 +11,9 @@
                 <div class="skill-image flex justify-center mb-6">
                     
                     {#if $isDarkMode}
-                        <img class="" src="/img/skills/dark-{mySkills.image}" alt="{mySkills.altText}">
-                        <img class="blur-md absolute opacity-30" src="/img/skills/dark-{mySkills.image}" alt="{mySkills.altText}">
+                        <img class="" src="src/lib/assets/img/skills/dark-{mySkills.image}" alt="{mySkills.altText}">
                     {:else}
-                        <img src="/img/skills/light-{mySkills.image}" alt="{mySkills.altText}">
+                        <img src="src/lib/assets/img/skills/light-{mySkills.image}" alt="{mySkills.altText}">
                     {/if}
                 </div>
                 
