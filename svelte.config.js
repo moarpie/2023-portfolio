@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-netlify';
-import preprocess from 'svelte-preprocess'; // Add this line
+import preprocess from 'svelte-preprocess';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 import { importAssets } from 'svelte-preprocess-import-assets';
 
 const config = {
@@ -10,7 +11,7 @@ const config = {
     }),
   },
   preprocess: [
-    preprocess(), // Use svelte-preprocess
+    preprocess(),
     importAssets(),
   ],
 };

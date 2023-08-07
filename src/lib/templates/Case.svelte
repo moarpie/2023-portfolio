@@ -5,7 +5,7 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">
     {#each cases as myCase}
         <div class="case">
-            <div class="case-image mb-2" style="background-image: url('src/lib/assets/img/cases/{myCase.image}')"></div>
+            <div class="case-image mb-2" style="background-image: url('img/cases/{myCase.image}')"></div>
             
             <h3 class="title-small mb-1">{myCase.title}</h3>
             <p class="subtitle-small">{myCase.description}</p>

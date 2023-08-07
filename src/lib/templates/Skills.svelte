@@ -11,9 +11,9 @@
                 <div class="skill-image flex justify-center mb-6">
                     
                     {#if $isDarkMode}
-                        <img src="src/lib/assets/img/skills/dark-{mySkills.image}" alt="{mySkills.altText}">
+                        <img src="/img/skills/dark-{mySkills.image}" alt="{mySkills.altText}">
                     {:else}
-                        <img src="src/lib/assets/img/skills/light-{mySkills.image}" alt="{mySkills.altText}">
+                        <img src="/img/skills/light-{mySkills.image}" alt="{mySkills.altText}">
                     {/if}
                 </div>
                 
