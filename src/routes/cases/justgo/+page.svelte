@@ -1,5 +1,5 @@
 <script>
-
+    import Pic from "$lib/assets/test.png";
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
@@ -17,6 +17,8 @@
         </p>
     </div>
     <div>
-        <img src="./././assets/test.png" alt="">
+        <img src={Pic} alt="">
+        <img src="$lib/assets/test.png" alt="" />
     </div>
 </div>
+

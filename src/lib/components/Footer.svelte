@@ -15,7 +15,7 @@
             <a href="mailto:michael@vendila.dk">michael@vendila.dk</a>
         </div>
         <div class="icon flex flex-col gap-2 items-center">
-            <img src="src/lib/assets/icons/phone.svg" alt="Telephone icon">
+            <img src="$lib/assets/icons/phone.svg" alt="Telephone icon">
             <a href="tel:+4528914441">+45 28 91 44 41</a>
         </div>
     </div>
