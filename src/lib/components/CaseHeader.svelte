@@ -15,7 +15,7 @@
 
     </div>
 </div>
-<div class="mb-48"></div>
+<div class="mb-24 md:mb-48"></div>
 
 <style>
     .header {

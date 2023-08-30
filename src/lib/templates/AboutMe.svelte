@@ -6,7 +6,7 @@
 </script>
 
 <div class="about-me flex flex-col justify-center items-center md:flex-row ">
-    <div class="mb-12 md:mb-0 profile-blob md:-mr-16">
+    <div class="-mb-16 md:mb-0 profile-blob md:-mr-16">
         <img src="$lib/assets/img/profile-blob.png" alt="A headshot photograph of me">
     </div>
     <div class="card-wrapper">

@@ -1,26 +1,26 @@
 {
-  "aboutMe" : "Est occaecat dolor in adipisicing id duis consectetur et reprehenderit ut do in est cupidatat quis. Enim id excepteur dolore proident ullamco culpa commodo. Nostrud et aliquip duis labore fugiat magna fugiat consequat. Anim aliquip labore aliquip nulla anim veniam dolor cillum. Qui non Lorem cillum fugiat culpa cillum ipsum.",
+  "aboutMe" : "Originally from the dark parts of Vendsyssel, I have since moved to Aalborg where I live with my girlfriend and daughter. In my spare time I like hiking very long distances, coding websites in every JS framework under the sun, or building and customising mechanical keyboards.",
   "cases": [
     {
-      "image": "test.png",
+      "image": "justgo.png",
       "title": "Social cycling app design",
       "description": "Wireframing and design as freelance work.",
       "link": "/cases/justgo"
     },
     {
-      "image": "test.png",
+      "image": "justgo.png",
       "title": "Portfolio Case 2",
       "description": "This is the description for portfolio case 2.",
       "link": "https://example.com/portfolio-case-2"
     },
     {
-      "image": "test.png",
+      "image": "justgo.png",
       "title": "Portfolio Case 3",
       "description": "This is the description for portfolio case 3.",
       "link": "https://example.com/portfolio-case-1"
     },
     {
-      "image": "test.png",
+      "image": "justgo.png",
       "title": "Portfolio Case 4",
       "description": "This is the description for portfolio case 4.",
       "link": "https://example.com/portfolio-case-1"

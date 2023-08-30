@@ -11,8 +11,11 @@ const config = {
     }),
   },
   preprocess: [
+    importAssets({
+
+    }),
     preprocess(),
-    importAssets(),
+
   ],
 };
 

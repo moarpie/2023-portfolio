@@ -42,7 +42,7 @@ const AboutMe = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.description === void 0 && $$bindings.description && description !== void 0)
     $$bindings.description(description);
   $$result.css.add(css$2);
-  return `<div class="about-me flex flex-col justify-center items-center md:flex-row "><div class="mb-12 md:mb-0 profile-blob md:-mr-16 svelte-1camkky"><img${add_attribute("src", ___ASSET___0, 0)} alt="A headshot photograph of me"></div>
+  return `<div class="about-me flex flex-col justify-center items-center md:flex-row "><div class="-mb-16 md:mb-0 profile-blob md:-mr-16 svelte-1camkky"><img${add_attribute("src", ___ASSET___0, 0)} alt="A headshot photograph of me"></div>
     <div class="card-wrapper svelte-1camkky">${validate_component(Card, "Card").$$render($$result, { class: "elevation-3" }, {}, {
     default: () => {
       return `<h2 class="title-small mb-2">Facts about me
@@ -74,7 +74,7 @@ const Case = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.cases(cases2);
   $$result.css.add(css$1);
   return `<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">${each(cases2, (myCase) => {
-    return `<div class="case"><div class="case-image mb-2 svelte-1o0rb2j" style="${"background-image: url('src/lib/assets/img/cases/" + escape(myCase.image, true) + "')"}"></div>
+    return `<div class="case"><div class="case-image mb-2 svelte-1o0rb2j" style="${"background-image: url('img/thumbnails/" + escape(myCase.image, true) + "')"}"></div>
             
             <h3 class="title-small mb-1">${escape(myCase.title)}</h3>
             <p class="subtitle-small">${escape(myCase.description)}</p>
@@ -106,7 +106,7 @@ const Skills = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   $$unsubscribe_isDarkMode();
   return `<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16">${each(skills2, (mySkills) => {
-    return `<div class="skill"><div class="skill-content svelte-1oc9j0"><div class="skill-image flex justify-center mb-6">${$isDarkMode ? `<img src="${"src/lib/assets/img/skills/dark-" + escape(mySkills.image, true)}"${add_attribute("alt", mySkills.altText, 0)}>` : `<img src="${"src/lib/assets/img/skills/light-" + escape(mySkills.image, true)}"${add_attribute("alt", mySkills.altText, 0)}>`}</div>
+    return `<div class="skill"><div class="skill-content svelte-1oc9j0"><div class="skill-image flex justify-center mb-6">${$isDarkMode ? `<img src="${"/img/skills/dark-" + escape(mySkills.image, true)}"${add_attribute("alt", mySkills.altText, 0)}>` : `<img src="${"/img/skills/light-" + escape(mySkills.image, true)}"${add_attribute("alt", mySkills.altText, 0)}>`}</div>
                 
                 <h3 class="title-small mb-1 text-center">${escape(mySkills.title)}</h3>
                 <p class="text-center vague">${escape(mySkills.description)}</p></div>
@@ -114,28 +114,28 @@ const Skills = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   })}
 </div>`;
 });
-const aboutMe = "Est occaecat dolor in adipisicing id duis consectetur et reprehenderit ut do in est cupidatat quis. Enim id excepteur dolore proident ullamco culpa commodo. Nostrud et aliquip duis labore fugiat magna fugiat consequat. Anim aliquip labore aliquip nulla anim veniam dolor cillum. Qui non Lorem cillum fugiat culpa cillum ipsum.";
+const aboutMe = "Originally from the dark parts of Vendsyssel, I have since moved to Aalborg where I live with my girlfriend and daughter. In my spare time I like hiking very long distances, coding websites in every JS framework under the sun, or building and customising mechanical keyboards.";
 const cases = [
   {
-    image: "test.png",
+    image: "justgo.png",
     title: "Social cycling app design",
     description: "Wireframing and design as freelance work.",
     link: "/cases/justgo"
   },
   {
-    image: "test.png",
+    image: "justgo.png",
     title: "Portfolio Case 2",
     description: "This is the description for portfolio case 2.",
     link: "https://example.com/portfolio-case-2"
   },
   {
-    image: "test.png",
+    image: "justgo.png",
     title: "Portfolio Case 3",
     description: "This is the description for portfolio case 3.",
     link: "https://example.com/portfolio-case-1"
   },
   {
-    image: "test.png",
+    image: "justgo.png",
     title: "Portfolio Case 4",
     description: "This is the description for portfolio case 4.",
     link: "https://example.com/portfolio-case-1"
