@@ -18,7 +18,7 @@
             <p class="mb-8">
                 {description}
             </p>
-            <Button class="full-width secondary" label="Download full CV" link="google.com"/>
+            <Button class="full-width secondary" label="Download full CV" link="Michael Jensen - CV.pdf"/>
         </Card>
     </div>
 </div>

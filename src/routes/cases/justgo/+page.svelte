@@ -22,7 +22,7 @@
     </div>
 </div>
 
-<div class="mt-32 grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+<div class="pt-24 grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
     <div class="">
         <img src="$lib/assets/img/cases/justgo/wireframes2.jpg" alt="" />
     </div>
@@ -42,7 +42,7 @@
     </div>
 </div>
 
-<div class="grid grid-cols-1">
+<div class="pt-24 flex justify-center">
     <img src="$lib/assets/img/cases/justgo/mockup.png" alt="">
 </div>
 

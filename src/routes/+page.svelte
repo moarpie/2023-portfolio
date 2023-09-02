@@ -19,15 +19,15 @@
 <Header />
 
 <div class="container">
-	<Section title="About me" anchor="about">  
+	<Section title="Who am I?" anchor="about">  
         <AboutMe description={content.aboutMe}/>
     </Section>
 
-    <Section title="My Work" anchor="work">  
+    <Section title="Selected works" anchor="work">  
         <Case cases={content.cases} />
     </Section>
 
-    <Section title="My skills" anchor="skills">  
+    <Section title="Notable skills" anchor="skills">  
         <Skills skills={content.skills}/>
     </Section>
 </div>

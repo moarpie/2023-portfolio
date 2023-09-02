@@ -2,28 +2,46 @@
   "aboutMe" : "Originally from the dark parts of Vendsyssel, I have since moved to Aalborg where I live with my girlfriend and daughter. In my spare time I like hiking very long distances, coding websites in every JS framework under the sun, or building and customising mechanical keyboards.",
   "cases": [
     {
-      "image": "justgo.png",
-      "title": "Social cycling app design",
-      "description": "Wireframing and design as freelance work.",
-      "link": "/cases/justgo"
+        "image": "inwido-case.jpg",
+        "title": "B2B sales platform for carpenters",
+        "description": "UX and design for complex multi-device webapp",
+        "link": "/cases/inwido",
+        "cta": "View case"
     },
     {
-      "image": "justgo.png",
-      "title": "Portfolio Case 2",
-      "description": "This is the description for portfolio case 2.",
-      "link": "https://example.com/portfolio-case-2"
+        "image": "just-go-case.jpg",
+        "title": "Social cycling app design",
+        "description": "Wireframing and design as freelance work",
+        "link": "/cases/justgo",
+        "cta": "View case"
     },
     {
-      "image": "justgo.png",
-      "title": "Portfolio Case 3",
-      "description": "This is the description for portfolio case 3.",
-      "link": "https://example.com/portfolio-case-1"
+      "image": "outrup-case.jpg",
+      "title": "Concept work for marketing campagin site",
+      "description": "Ideation of an interactive sales tool.",
+      "link": "cases/outrup",
+      "cta": "View case"
     },
     {
-      "image": "justgo.png",
-      "title": "Portfolio Case 4",
-      "description": "This is the description for portfolio case 4.",
-      "link": "https://example.com/portfolio-case-1"
+      "image": "skanva-case.jpg",
+      "title": "B2C ecommerce redesign",
+      "description": "New visual identity and complete overhaul of shop design",
+      "link": "cases/skanva",
+      "cta": "View case"
+    },
+    {
+      "image": "fold-article.jpg",
+      "title": "Where is 'above the fold'?",
+      "description": "A short piece I wrote about one of the pitfalls of landing page design (external link)",
+      "link": "https://medium.com/@moarpie/where-above-the-fold-really-is-27794a81cbce",
+      "cta": "Read article"
+    },
+    {
+      "image": "skanva-case.jpg",
+      "title": "This portfolio",
+      "description": "Ad ea cupidatat eu. Eu deserunt esse sunt duis dolore. Tempor non consequat nisi qui sit aute labore commodo pariatur officia sit. Exercitation consequat aliquip incididunt aliqua eu non.",
+      "link": "https://example.com/portfolio-case-1",
+      "cta": "View case"
     }
   ],
   "skills": [
