@@ -20,7 +20,7 @@
     </div>
     <div class="order-1 md:order-2">
             <video data-v-2ba094de="" width="100%" autoplay="autoplay" loop="loop" muted="muted">
-            <source src="src/lib/assets/img/cases/outrup/colour-slider.mp4" type="video/mp4">
+            <source src="$lib/assets/img/cases/outrup/colour-slider.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>

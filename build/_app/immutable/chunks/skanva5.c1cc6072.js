@@ -1,0 +1,1 @@
+const _=""+new URL("../assets/skanva2.2fc0071f.png",import.meta.url).href,s=""+new URL("../assets/skanva4.66cf9d0a.png",import.meta.url).href,a=""+new URL("../assets/skanva5.384c8e1f.jpg",import.meta.url).href;export{_,s as a,a as b};
