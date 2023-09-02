@@ -5,9 +5,9 @@
     import { isDarkMode } from '$lib/stores/store.js';
     import { onMount } from 'svelte';
 
-    let linkTag; // Reference to the <link> tag
+    let linkTag;
 
-    // Function to update the theme based on the store value
+    // Update the theme based on the store value
     function updateTheme() {
         document.documentElement.setAttribute('data-theme', $isDarkMode ? 'dark' : 'light');
 
