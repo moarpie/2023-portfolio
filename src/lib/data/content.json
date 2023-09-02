@@ -48,26 +48,26 @@
     {
       "image": "design-systems.svg",
       "title": "Design systems",
-      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt.",
-      "altText": "An icon describing the skill in question"
+      "description": "Crafting effective and scalable design systems and design tokens is my forte. These systems enable cohesive and scalable designs, streamlining workflows and ensuring consistency.",
+      "altText": "An icon representing design systems"
     },
     {
       "image": "user-research.svg",
       "title": "User research",
-      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt.",
-      "altText": "An icon describing the skill in question"
+      "description": "User research drives user-centered design. I conduct usability testing, user interviews, and translating feedback into actionable improvements, ensuring user needs are met.",
+      "altText": "An icon representing user research"
     },
     {
       "image": "prototyping.svg",
       "title": "Prototyping",
-      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt.",
-      "altText": "An icon describing the skill in question"
+      "description": "I specialize in transforming ideas into interactive prototypes, vital for testing and gathering early feedback, ensuring the final product meets user and business goals.",
+      "altText": "An icon representing prototyping"
     },
     {
       "image": "accessibility.svg",
       "title": "Accessibility",
-      "description": "Esse reprehenderit aliquip nisi labore id mollit commodo cillum enim nostrud et. Commodo exercitation sit qui est exercitation labore anim incididunt.",
-      "altText": "An icon describing the skill in question"
+      "description": "Accessibility isn’t just a checkbox for me, but at the core of my design philosophy.  I am well-versed in accessibility standards (such as WCAG) and implement them rigorously in my designs.",
+      "altText": "An icon representing accessibility"
     }
   ]
 
