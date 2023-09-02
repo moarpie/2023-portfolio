@@ -12,7 +12,19 @@
 
 <style lang="scss">
     :global {
-
+        .case-section {
+            padding-top: 1rem;
+        }
+        @media all and (min-width: 768px) {
+            .case-section {
+            padding-top: 2rem;
+        }
+        }
+        @media all and (min-width: 1024px) {
+            .case-section {
+            padding-top: 4rem;
+        }
+        }
     }
 
 </style>

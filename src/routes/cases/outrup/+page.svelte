@@ -20,13 +20,13 @@
     </div>
     <div class="order-1 md:order-2">
             <video data-v-2ba094de="" width="100%" autoplay="autoplay" loop="loop" muted="muted">
-            <source src="$lib/assets/img/cases/outrup/colour-slider.mp4" type="video/mp4">
+            <source src="src/lib/assets/img/cases/outrup/colour-slider.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 </div>
 
-<div class="pt-24 grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+<div class="case-section grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
     <div class="">
         <img src="$lib/assets/img/cases/outrup/3d.png" alt="" />
     </div>

@@ -23,7 +23,7 @@
     </div>
 </div>
 
-<div class="pt-24 grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+<div class="case-section grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
     <div class="">
         <img src="$lib/assets/img/cases/skanva/skanva2.png" alt="" />
     </div>
@@ -32,7 +32,7 @@
     </div>
 </div>
 
-<div class="pt-24 grid grid-cols-1 gap-8 mt-8">
+<div class="case-section grid grid-cols-1 gap-8 mt-8">
     <h2 class="title-medium">
         Guerilla user research
     </h2>

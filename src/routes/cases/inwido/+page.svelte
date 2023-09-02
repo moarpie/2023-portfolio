@@ -18,7 +18,7 @@
     </div>
 </div>
 
-<div class="pt-24 grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+<div class="case-section grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
     <div class="">
         <img src="$lib/assets/img/cases/inwido/inwido2.png" alt="" />
     </div>
@@ -33,13 +33,13 @@
     </div>
 </div>
 
-<div class="pt-24 flex justify-center">
+<div class="case-section flex justify-center">
     <div class="">
         <img src="$lib/assets/img/cases/inwido/device-mockups.png" alt="" />
     </div>
 </div>
 
-<div class="pt-24 grid grid-cols-1 gap-8 mt-8">
+<div class="case-section grid grid-cols-1 gap-8 mt-8">
     <div class="">
         <h2 class="title-medium">
             Design systems
@@ -57,7 +57,7 @@
     </div>
 </div>
 
-<div class="pt-24 flex justify-center">
+<div class="case-section flex justify-center">
     <div class="">
         <img src="$lib/assets/img/cases/inwido/device-mockups2.png" alt="" />
     </div>
