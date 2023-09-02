@@ -33,7 +33,7 @@
     </div>
 </div>
 
-<div class="pt-24 grid grid-cols-1 gap-8 mt-8">
+<div class="pt-24 flex justify-center">
     <div class="">
         <img src="$lib/assets/img/cases/inwido/device-mockups.png" alt="" />
     </div>
@@ -52,12 +52,12 @@
         </p>
 
     </div>
-    <div class="">
+    <div class="flex justify-center">
         <img src="$lib/assets/img/cases/inwido/inwido4.jpg" alt="" />
     </div>
 </div>
 
-<div class="pt-24 grid grid-cols-1 gap-8 mt-8">
+<div class="pt-24 flex justify-center">
     <div class="">
         <img src="$lib/assets/img/cases/inwido/device-mockups2.png" alt="" />
     </div>

@@ -12,9 +12,7 @@
     <div class="tagline text-center title mb-8 mx-4">
         <h1 class="subtitle-large">I convert caffeine and user insights to pixels</h1>
     </div>
-    <div class="text-center">
 
-    </div>
 </div>
 
 
@@ -26,7 +24,7 @@
     .tagline {
         color: var(--vague-color);
     }
-.jumbotron {
+    .jumbotron {
     background-color: var(--interactive-color);
     background-image: var(--primary-gradient);
     background-size: 100%;
@@ -34,6 +32,23 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+    animation: blurIn 700ms ease-out;
+    opacity: 1;
+    filter: blur(0px);
+}
+
+@keyframes blurIn {
+    0% {
+        opacity: 0;
+        filter: blur(40px);
     }
+    100% {
+        opacity: 1;
+        filter: blur(0px); /* No blur */
+    }
+}
+
+
+ 
 
 </style>

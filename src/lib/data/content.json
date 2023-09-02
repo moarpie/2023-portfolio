@@ -37,10 +37,10 @@
       "cta": "Read article"
     },
     {
-      "image": "skanva-case.jpg",
-      "title": "This portfolio",
-      "description": "Ad ea cupidatat eu. Eu deserunt esse sunt duis dolore. Tempor non consequat nisi qui sit aute labore commodo pariatur officia sit. Exercitation consequat aliquip incididunt aliqua eu non.",
-      "link": "https://example.com/portfolio-case-1",
+      "image": "portfolio.jpg",
+      "title": "design system based portfolio",
+      "description": "Well, you're looking at it. I created a design token based design system to make a component-based site that supports light/dark mode theming.",
+      "link": "cases/portfolio",
       "cta": "View case"
     }
   ],
