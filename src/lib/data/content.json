@@ -6,42 +6,47 @@
         "title": "B2B sales platform for carpenters",
         "description": "UX and design for complex multi-device webapp",
         "link": "/cases/inwido",
-        "cta": "View case"
+        "cta": "View case",
+        "public": true
     },
     {
         "image": "just-go-case.jpg",
         "title": "Social cycling app design",
         "description": "Wireframing and design as freelance work",
         "link": "/cases/justgo",
-        "cta": "View case"
+        "cta": "View case",
+        "public": true
     },
     {
       "image": "outrup-case.jpg",
       "title": "Concept work for marketing campagin site",
       "description": "Ideation of an interactive sales tool.",
       "link": "cases/outrup",
-      "cta": "View case"
+      "cta": "View case",
+      "public": true
     },
     {
       "image": "skanva-case.jpg",
       "title": "B2C ecommerce redesign",
       "description": "New visual identity and complete overhaul of shop design",
       "link": "cases/skanva",
-      "cta": "View case"
+      "public": true
     },
     {
       "image": "fold-article.jpg",
       "title": "Where is 'above the fold'?",
       "description": "A short piece I wrote about one of the pitfalls of landing page design (external link)",
       "link": "https://medium.com/@moarpie/where-above-the-fold-really-is-27794a81cbce",
-      "cta": "Read article"
+      "cta": "Read article",
+      "public": true
     },
     {
       "image": "portfolio.jpg",
       "title": "design system based portfolio",
       "description": "Well, you're looking at it. I created a design token based design system to make a component-based site that supports light/dark mode theming.",
       "link": "cases/portfolio",
-      "cta": "View case"
+      "cta": "View case",
+      "public": false
     }
   ],
   "skills": [
