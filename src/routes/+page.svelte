@@ -12,7 +12,8 @@
 
 <svelte:head>
     <title>Michael Jensen's portfolio</title>
-    <meta name="description" content="Description of your webpage">
+    <meta name="description" content="I'm a product designer who gets nerdy with design systems and strive to create a good user experience.">
+    <meta property="og:image" content="$lib/og-image.jpg" />
 </svelte:head>
 
 

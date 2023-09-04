@@ -10,7 +10,7 @@
         <h1 class="display">I am a product designer from Aalborg, Denmark</h1>
     </div>
     <div class="tagline text-center title mb-8 mx-4">
-        <h1 class="subtitle-large">I convert caffeine and user insights to pixels</h1>
+        <h1 class="subtitle-large">I convert caffeine and user insights into pixels</h1>
     </div>
 
 </div>
