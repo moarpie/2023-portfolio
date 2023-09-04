@@ -1,6 +1,7 @@
 import { c as create_ssr_component, e as escape, o as onDestroy, a as add_attribute, v as validate_component, d as each, b as subscribe } from "../../chunks/index2.js";
 import { i as isDarkMode, S as Section } from "../../chunks/Section.js";
 import { B as Button } from "../../chunks/Button.js";
+const ___ASSET___0$1 = "/_app/immutable/assets/og-image.40def413.jpg";
 const Header_svelte_svelte_type_style_lang = "";
 const css$4 = {
   code: ".header.svelte-bbzavq{max-width:750px;margin:0 auto}.tagline.svelte-bbzavq{color:var(--vague-color)}.jumbotron.svelte-bbzavq{background-color:var(--interactive-color);background-image:var(--primary-gradient);background-size:100%;-webkit-background-clip:text;-moz-background-clip:text;-webkit-text-fill-color:transparent;-moz-text-fill-color:transparent;animation:svelte-bbzavq-blurIn 700ms ease-out;opacity:1;filter:blur(0px)}@keyframes svelte-bbzavq-blurIn{0%{opacity:0;filter:blur(40px)}100%{opacity:1;filter:blur(0px)}}",
@@ -10,7 +11,7 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$4);
   return `<div class="header container svelte-bbzavq"><div class="text-center mt-16 md:mt-24"><div class="jumbotron svelte-bbzavq">Hello.</div></div>
     <div class="text-center title mb-2 md:mb-4 mx-4"><h1 class="display">I am a product designer from Aalborg, Denmark</h1></div>
-    <div class="tagline text-center title mb-8 mx-4 svelte-bbzavq"><h1 class="subtitle-large">I convert caffeine and user insights to pixels</h1></div>
+    <div class="tagline text-center title mb-8 mx-4 svelte-bbzavq"><h1 class="subtitle-large">I convert caffeine and user insights into pixels</h1></div>
 
 </div>`;
 });
@@ -74,11 +75,11 @@ const Case = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.cases(cases2);
   $$result.css.add(css$1);
   return `<div class="grid grid-cols-1 xl:grid-cols-2 gap-x-8 gap-y-16">${each(cases2, (myCase) => {
-    return `<div class="case"><div class="case-image mb-2 svelte-vjahfn" style="${"background-image: url('img/cases/thumbnails/" + escape(myCase.image, true) + "')"}"></div>
-            
-            <h3 class="title-small mb-1">${escape(myCase.title)}</h3>
-            <p class="subtitle-small">${escape(myCase.description)}</p>
-            ${validate_component(Button, "Button").$$render(
+    return `${myCase.public == true ? `<div class="case"><div class="case-image mb-2 svelte-vjahfn" style="${"background-image: url('img/cases/thumbnails/" + escape(myCase.image, true) + "')"}"></div>
+
+                <h3 class="title-small mb-1">${escape(myCase.title)}</h3>
+                <p class="subtitle-small">${escape(myCase.description)}</p>
+                ${validate_component(Button, "Button").$$render(
       $$result,
       {
         class: "primary",
@@ -88,7 +89,7 @@ const Case = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       {},
       {}
     )}
-        </div>`;
+            </div>` : `${myCase.public == false ? `` : ``}`}`;
   })}
 </div>`;
 });
@@ -121,42 +122,47 @@ const cases = [
     title: "B2B sales platform for carpenters",
     description: "UX and design for complex multi-device webapp",
     link: "/cases/inwido",
-    cta: "View case"
+    cta: "View case",
+    "public": true
   },
   {
     image: "just-go-case.jpg",
     title: "Social cycling app design",
     description: "Wireframing and design as freelance work",
     link: "/cases/justgo",
-    cta: "View case"
+    cta: "View case",
+    "public": true
   },
   {
     image: "outrup-case.jpg",
     title: "Concept work for marketing campagin site",
     description: "Ideation of an interactive sales tool.",
     link: "cases/outrup",
-    cta: "View case"
+    cta: "View case",
+    "public": true
   },
   {
     image: "skanva-case.jpg",
     title: "B2C ecommerce redesign",
     description: "New visual identity and complete overhaul of shop design",
     link: "cases/skanva",
-    cta: "View case"
+    "public": true
   },
   {
     image: "fold-article.jpg",
     title: "Where is 'above the fold'?",
     description: "A short piece I wrote about one of the pitfalls of landing page design (external link)",
     link: "https://medium.com/@moarpie/where-above-the-fold-really-is-27794a81cbce",
-    cta: "Read article"
+    cta: "Read article",
+    "public": true
   },
   {
     image: "portfolio.jpg",
     title: "design system based portfolio",
     description: "Well, you're looking at it. I created a design token based design system to make a component-based site that supports light/dark mode theming.",
     link: "cases/portfolio",
-    cta: "View case"
+    cta: "View case",
+    "public": false
   }
 ];
 const skills = [
@@ -191,7 +197,7 @@ const content = {
   skills
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${$$result.head += `<!-- HEAD_svelte-akcf57_START -->${$$result.title = `<title>Michael Jensen&#39;s portfolio</title>`, ""}<meta name="description" content="Description of your webpage"><!-- HEAD_svelte-akcf57_END -->`, ""}
+  return `${$$result.head += `<!-- HEAD_svelte-fxwmm2_START -->${$$result.title = `<title>Michael Jensen&#39;s portfolio</title>`, ""}<meta name="description" content="I'm a product designer who gets nerdy with design systems and strive to create a good user experience."><meta property="og:image"${add_attribute("content", ___ASSET___0$1, 0)}><!-- HEAD_svelte-fxwmm2_END -->`, ""}
 
 
 ${validate_component(Header, "Header").$$render($$result, {}, {}, {})}
