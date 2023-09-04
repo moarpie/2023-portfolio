@@ -35,7 +35,7 @@
             <div class="menu-item -mt-4 md:-mt-0 subtitle-large text-center"><a href="/#skills">Skills</a></div>
             <div class="menu-item -mt-4 md:-mt-0 subtitle-large text-center"><a href="/#contact">Contact</a></div>
         </div>
-        <div class="theme-toggle order-3 w-40 lg:w-56 flex justify-end">
+        <div class="theme-toggle order-3 md:w-40 lg:w-56 flex justify-end">
             <ModeSwitcher />
         </div>
     </div>
