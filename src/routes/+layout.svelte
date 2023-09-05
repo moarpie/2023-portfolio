@@ -113,10 +113,8 @@
     text-rendering: optimizeLegibility;
     color: var(--default-color);
     background-color: var(--canvas-color);
-    transition: background-color 300ms ease-in, color 400ms ease-out;
     }
     a {
-        transition: color 100ms ease-in, color 100ms ease-out;
         color: var(--interactive-color);
         &:hover {
             color: var(--interactive-color-hover);
@@ -130,6 +128,16 @@
     .vague {
         color: var(--vague-color);
     }
+
+/*Only animate if reduced motion is off*/
+@media (prefers-reduced-motion: no-preference) {
+    body {
+        transition: background-color 300ms ease-in, color 400ms ease-out;
+    }
+    a {
+        transition: color 100ms ease-in, color 100ms ease-out;
+    }   
+}
 
     /*Responsive typography styling*/
 

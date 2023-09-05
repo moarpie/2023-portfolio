@@ -37,16 +37,20 @@
     filter: blur(0px);
 }
 
-@keyframes blurIn {
-    0% {
-        opacity: 0;
-        filter: blur(40px);
-    }
-    100% {
-        opacity: 1;
-        filter: blur(0px); /* No blur */
+/*Only animate if reduced motion is off*/
+@media (prefers-reduced-motion: no-preference) {
+    @keyframes blurIn {
+        0% {
+            opacity: 0;
+            filter: blur(40px);
+        }
+        100% {
+            opacity: 1;
+            filter: blur(0px); /* No blur */
+        }
     }
 }
+
 
 
  

@@ -56,12 +56,9 @@
     }
 
     label .light {
-        transition: 0.4s;
         transform: rotate(0deg);
     }
-    label .dark {
-        transition: 0.4s;
-    }
+    
     label .ball {
         display: none;
     }
@@ -99,11 +96,36 @@
         background: var(--modeswitcher-ball);
         opacity: 1;
         border-radius: 50%;
-        transition: 0.4s;
+    }
+    /*Turn off animations by default*/
+    label .light {
+        transition: 0.0s;
+    }
+    label .ball {
+        transition: 0.0s;
+    }
+    label .dark {
+        transition: 0.0s;
     }
     label {
-        transition: 0.4s;
+        transition: 0.0s;
     }
+    /*Only animate if reduced motion is off*/
+    @media (prefers-reduced-motion: no-preference) {
+        label .ball {
+            transition: 0.4s;
+        }
+        label {
+            transition: 0.4s;  
+        }  
+        label .dark {
+            transition: 0.4s;
+        }
+        label .light {
+            transition: 0.4s;
+        }            
+    }
+
     input:checked + label {
         background: var(--modeswitcher-bg-dark)
     }
