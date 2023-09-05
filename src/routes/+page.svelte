@@ -11,7 +11,7 @@
     import MetaHead from "$lib/utility/MetaHead.svelte";
 </script>
 
-<MetaHead title = "Hov hov"></MetaHead>
+<MetaHead title = "👋"></MetaHead>
 
 <Header />
 
