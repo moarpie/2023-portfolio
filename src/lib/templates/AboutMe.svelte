@@ -14,7 +14,7 @@
             <h2 class="title-small mb-2">
                 Facts about me
             </h2>
-            <p class="subtitle-small">I am <AgeCalc /> seconds old.</p>
+            <p class="subtitle-small">I am <AgeCalc /> years old.</p>
             <p class="mb-8">
                 {description}
             </p>

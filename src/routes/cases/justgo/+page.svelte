@@ -1,14 +1,16 @@
 <script>
     import CaseHeader from "$lib/components/CaseHeader.svelte";
     import content from "$lib/data/content.json";
+    import MetaHead from "$lib/utility/MetaHead.svelte";
 </script>
+<MetaHead title = "Social cycling app"></MetaHead>
 <CaseHeader title="Social cycling app UX design" subtitle="Freelance work for Snapp A/S"></CaseHeader>  
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
     <div class="order-2 md:order-1">
         <h2 class="title-medium">
             Background
         </h2>
-        <p>In this project, I was hired in to do UX design for an app that Snapp were planning to create with an external client. The idea behind the app is to act as a social platform that cyclist can create and find cycling events that are tailored to their exact preferences.
+        <p>In this project, I was hired in to do UX design on a native app with <a href="https://snapp.dk" target="_blank">Snapp ApS</a> for external client. The idea behind the app is to act as a social platform that cyclist can create and find cycling events that are tailored to their exact preferences.
         </p>
         <p>
             I worked closely with their developers and their client to ensure that the design would meet both the cliens demands and the technologies that would lie behind.

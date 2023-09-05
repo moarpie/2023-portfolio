@@ -1,8 +1,9 @@
 <script>
     import CaseHeader from "$lib/components/CaseHeader.svelte";
     import content from "$lib/data/content.json";
+    import MetaHead from "$lib/utility/MetaHead.svelte";
 </script>
-
+<MetaHead title = "Ecommerce overhaul"></MetaHead>
 <CaseHeader title="B2C webshop redesign" subtitle="Complete overhaul of shop design"></CaseHeader>  
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
     <div class="order-2 md:order-1">
@@ -15,7 +16,7 @@
             The redesign was a part of a very comprehensive task of migrating from a Magento 1.9 to 2.0 platform and during the process I worked closely with the external developers on both the design part, ensuring deliverables for handover were produced correctly, but also acting in a product manager role, scoping out the feature that Skanva needed and communicating them to the developers.
         </p>
         <p>
-            <a href="https://vinduesgrossisten.dk">View the site here</a>
+            <a href="https://vinduesgrossisten.dk" target="_blank">View the site here</a>
         </p>
     </div>
     <div class="order-1 md:order-2">

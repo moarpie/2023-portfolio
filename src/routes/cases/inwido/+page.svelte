@@ -1,6 +1,9 @@
 <script>
     import CaseHeader from "$lib/components/CaseHeader.svelte";
+    import MetaHead from "$lib/utility/MetaHead.svelte";
 </script>
+
+<MetaHead title = "Self-service case"></MetaHead>
 <CaseHeader title="Self-service platform for carpenters" subtitle="UX and design for a complex web app"></CaseHeader>  
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
     <div class="order-2 md:order-1">
@@ -27,7 +30,7 @@
             Consistency is king
         </h2>
         <p>
-            Since this is such a complex tool with many features, its important that all the different visual elements are easy and quick to interpret, and all the similar functions are consistent in appearance. As an example, every different kind of button in the system that creates something new, has the exact same green gradient, which also makes the buttons stand out from the rest of the elements.
+            Since this is such a complex tool with many features, its important that all the different visual elements are easy and quick to interpret, and all the similar functions are consistent in appearance. For example, every variation of buttons in the system that creates something new, has the exact same green gradient, which also makes the buttons stand out from the rest of the elements.
         </p>
 
     </div>
@@ -39,24 +42,35 @@
     </div>
 </div>
 
-<div class="case-section grid grid-cols-1 gap-8 mt-8">
+<div class="case-section grid grid-cols-1">
     <div class="">
         <h2 class="title-medium">
             Design systems
         </h2>
         <p>
-            Buying windows is no simple task, since the configuration possibilities are practically endless and the needs of each individual carpenter varies greatly. This combined with the platform having many different other features to accommodate user needs, makes up for a very complex system with a lot of components. That’s why one of my main focus points in designing this has been creating and maintaining a functional design system. Especially in this case, since this platform is being used by two different companies with different visual identities.
+            Configuring windows is no simple task, since the combinations are practically endless and the needs of each individual carpenter varies greatly. This combined with the platform having many different other features to accommodate user needs, makes up for a very complex system with a lot of components. That’s why one of my main focus points in designing this has been creating and maintaining a functional design system. Especially in this case, since this platform is being used by two different companies with different visual identities.
         </p>
         <p>
             To me, one of the most important aspects of design is being able to get thoughts out of your head and down into psychical form. This is why I developed a comprehensive library of components, so that visualising a new idea for a function or flow would be as easy as possible.
         </p>
-
-    </div>
-    <div class="flex justify-center">
-        <img src="$lib/assets/img/cases/inwido/inwido4.jpg" alt="" />
     </div>
 </div>
 
+<div class="case-section flex justify-center">
+    <img src="$lib/assets/img/cases/inwido/inwido4.jpg" alt="" />
+</div>
+
+<div class="case-section grid grid-cols-1">
+    <div class="">
+        <h2 class="title-medium">
+            Branded versions
+        </h2>
+        <p>
+            The platform is currently used across three different unique companies, where it is styled to match the exact brand of each company. 
+        </p>
+
+    </div>
+</div>
 <div class="case-section flex justify-center">
     <div class="">
         <img src="$lib/assets/img/cases/inwido/device-mockups2.png" alt="" />

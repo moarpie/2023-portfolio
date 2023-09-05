@@ -1,5 +1,5 @@
 {
-  "aboutMe" : "Originally from the dark parts of Vendsyssel, I have since moved to Aalborg where I live with my girlfriend and daughter. In my spare time I like hiking very long distances, coding websites in every JS framework under the sun, or building and customising mechanical keyboards.",
+  "aboutMe" : "Originally from the dark parts of Vendsyssel, I now live in Aalborg where with my girlfriend and daughter. In my spare time I like hiking very long distances, coding websites in every JS framework under the sun, or building and customising mechanical keyboards.",
   "cases": [
     {
         "image": "inwido-case.jpg",
@@ -30,6 +30,7 @@
       "title": "B2C ecommerce redesign",
       "description": "New visual identity and complete overhaul of shop design",
       "link": "cases/skanva",
+      "cta": "View case",
       "public": true
     },
     {
