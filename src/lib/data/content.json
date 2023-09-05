@@ -54,25 +54,25 @@
     {
       "image": "design-systems.svg",
       "title": "Design systems",
-      "description": "Crafting effective and scalable design systems and design tokens is my forte. These systems enable cohesive and scalable designs, streamlining workflows and ensuring consistency.",
+      "description": "Crafting effective and scalable design systems with design tokens is my forte. These systems enable cohesive and scalable designs, streamlining workflows and ensuring consistency.",
       "altText": "An icon representing design systems"
     },
     {
       "image": "user-research.svg",
       "title": "User research",
-      "description": "User research drives user-centered design. I conduct usability testing, user interviews, and translating feedback into actionable improvements, ensuring user needs are met.",
+      "description": "A good product starts with user research. I conduct usability testing, user interviews, and translate feedback into actionable improvements, ensuring user needs are met.",
       "altText": "An icon representing user research"
     },
     {
       "image": "prototyping.svg",
       "title": "Prototyping",
-      "description": "I specialize in transforming ideas into interactive prototypes, vital for testing and gathering early feedback, ensuring the final product meets user and business goals.",
+      "description": "Quickly transforming ideas into interactive prototypes is vital for testing concepts and gathering early feedback. In my opinion, interactions and flows can only truly be put to the test by navigating through them with the actual device in hand.",
       "altText": "An icon representing prototyping"
     },
     {
       "image": "accessibility.svg",
       "title": "Accessibility",
-      "description": "Accessibility isn’t just a checkbox for me, but at the core of my design philosophy.  I am well-versed in accessibility standards (such as WCAG) and implement them rigorously in my designs.",
+      "description": "Accessibility isn’t just a checkbox for me, but at the core of my design philosophy. Contrast matters and easy of use trumps aesthetics any day. I continuously read up on WCAG and strive to adhere by the guidelines in my designs.",
       "altText": "An icon representing accessibility"
     }
   ]

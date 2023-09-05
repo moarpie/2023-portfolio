@@ -32,7 +32,7 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
-    animation: blurIn 700ms ease-out;
+    animation: blurIn 800ms ease-in;
     opacity: 1;
     filter: blur(0px);
 }

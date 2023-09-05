@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 05 Sep 2023 09:10:07 GMT
+ * Generated on Tue, 05 Sep 2023 10:04:33 GMT
  */
 
 :root {
@@ -13,6 +13,6 @@
   --primary-gradient: linear-gradient(-45deg, #7B5AC4 0%, #4BB299 100%);
   --canvas-color: #F8F7F9;
   --interactive-color-hover: #225A4D;
-  --interactive-color: #368270;
+  --interactive-color: #337B6A;
   --default-color: #252831;
 }
